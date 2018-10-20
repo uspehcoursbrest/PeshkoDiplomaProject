@@ -1,0 +1,438 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?qvsls7');
+  src:  url('fonts/icomoon.eot?qvsls7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qvsls7') format('truetype'),
+    url('fonts/icomoon.woff?qvsls7') format('woff'),
+    url('fonts/icomoon.svg?qvsls7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-1 .path1:before {
+  content: "\e900";
+  color: rgb(255, 255, 255);
+}
+.icon-1 .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-1 .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-2 .path1:before {
+  content: "\e903";
+  color: rgb(255, 255, 255);
+}
+.icon-2 .path2:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-2 .path3:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-2 .path4:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-3 .path1:before {
+  content: "\e907";
+  color: rgb(255, 144, 1);
+}
+.icon-3 .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-3 .path3:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-3 .path4:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-4 .path1:before {
+  content: "\e90b";
+  color: rgb(255, 255, 255);
+}
+.icon-4 .path2:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-4 .path3:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-5 .path1:before {
+  content: "\e90e";
+  color: rgb(255, 255, 255);
+}
+.icon-5 .path2:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-7 .path1:before {
+  content: "\e910";
+  color: rgb(255, 255, 255);
+}
+.icon-7 .path2:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-8 .path1:before {
+  content: "\e912";
+  color: rgb(255, 255, 255);
+}
+.icon-8 .path2:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-9 .path1:before {
+  content: "\e914";
+  color: rgb(255, 255, 255);
+}
+.icon-9 .path2:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-10 .path1:before {
+  content: "\e916";
+  color: rgb(255, 255, 255);
+}
+.icon-10 .path2:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-11 .path1:before {
+  content: "\e918";
+  color: rgb(255, 255, 255);
+}
+.icon-11 .path2:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-12:before {
+  content: "\e91a";
+  color: #ff692a;
+}
+.icon-13 .path1:before {
+  content: "\e91b";
+  color: rgb(255, 255, 255);
+}
+.icon-13 .path2:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(255, 153, 0);
+}
+.icon-14 .path1:before {
+  content: "\e91d";
+  color: rgb(255, 153, 0);
+}
+.icon-14 .path2:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-15 .path1:before {
+  content: "\e91f";
+  color: rgb(255, 153, 0);
+}
+.icon-15 .path2:before {
+  content: "\e920";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-15 .path3:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-16 .path1:before {
+  content: "\e922";
+  color: rgb(0, 0, 0);
+}
+.icon-16 .path2:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(255, 153, 0);
+}
+.icon-16 .path3:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: rgb(255, 153, 0);
+}
+.icon-17 .path1:before {
+  content: "\e925";
+  color: rgb(255, 153, 0);
+}
+.icon-17 .path2:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-17 .path3:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-17 .path4:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-18 .path1:before {
+  content: "\e929";
+  color: rgb(255, 153, 0);
+}
+.icon-18 .path2:before {
+  content: "\e92a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-19 .path1:before {
+  content: "\e92b";
+  color: rgb(255, 153, 0);
+}
+.icon-19 .path2:before {
+  content: "\e92c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-19 .path3:before {
+  content: "\e92d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-20 .path1:before {
+  content: "\e92e";
+  color: rgb(255, 255, 255);
+}
+.icon-20 .path2:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: rgb(255, 105, 42);
+}
+.icon-21 .path1:before {
+  content: "\e930";
+  color: rgb(255, 255, 255);
+}
+.icon-21 .path2:before {
+  content: "\e931";
+  margin-left: -1em;
+  color: rgb(255, 164, 47);
+}
+.icon-22:before {
+  content: "\e932";
+  color: #ffa42f;
+}
+.icon-23:before {
+  content: "\e933";
+  color: #ffa42f;
+}
+.icon-24:before {
+  content: "\e934";
+  color: #ffa42f;
+}
+.icon-25 .path1:before {
+  content: "\e935";
+  color: rgb(255, 164, 47);
+}
+.icon-25 .path2:before {
+  content: "\e936";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-25 .path3:before {
+  content: "\e937";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-26 .path1:before {
+  content: "\e938";
+  color: rgb(255, 164, 47);
+}
+.icon-26 .path2:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-26 .path3:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-26 .path4:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-26 .path5:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-26 .path6:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-26 .path7:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-26 .path8:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-26 .path9:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-27 .path1:before {
+  content: "\e941";
+  color: rgb(255, 164, 47);
+}
+.icon-27 .path2:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-28 .path1:before {
+  content: "\e943";
+  color: rgb(255, 255, 255);
+}
+.icon-28 .path2:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-29 .path1:before {
+  content: "\e945";
+  color: rgb(255, 255, 255);
+}
+.icon-29 .path2:before {
+  content: "\e946";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-29 .path3:before {
+  content: "\e947";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-29 .path4:before {
+  content: "\e948";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-30:before {
+  content: "\e949";
+}
+.icon-31:before {
+  content: "\e94a";
+}
+.icon-32:before {
+  content: "\e94b";
+}
+.icon-33:before {
+  content: "\e94c";
+}
+.icon-34:before {
+  content: "\e94d";
+}
+.icon-35 .path1:before {
+  content: "\e94e";
+  color: rgb(255, 144, 1);
+}
+.icon-35 .path2:before {
+  content: "\e94f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-36:before {
+  content: "\e950";
+}
+.icon-37:before {
+  content: "\e951";
+  color: #ff692a;
+}
+.icon-38 .path1:before {
+  content: "\e952";
+  color: rgb(255, 255, 255);
+}
+.icon-38 .path2:before {
+  content: "\e953";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-38 .path3:before {
+  content: "\e954";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-39:before {
+  content: "\e955";
+}
+.icon-40:before {
+  content: "\e956";
+}
+.icon-41:before {
+  content: "\e957";
+}
+.icon-42:before {
+  content: "\e958";
+}
+.icon-43 .path1:before {
+  content: "\e959";
+  color: rgb(255, 255, 255);
+}
+.icon-43 .path2:before {
+  content: "\e95a";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
+.icon-44 .path1:before {
+  content: "\e95b";
+  color: rgb(255, 255, 255);
+}
+.icon-44 .path2:before {
+  content: "\e95c";
+  margin-left: -1em;
+  color: rgb(255, 144, 1);
+}
