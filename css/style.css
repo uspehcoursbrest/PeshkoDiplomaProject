@@ -21,4 +21,936 @@ ul{
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    background-color: #6c6c6c;
+}
+
+header .logo a{
+    height: 100px;
+    width: 85px;
+}
+
+header .logo span:nth-child(2){
+    font-family: "Podkova ExtraBold";
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 800;
+    color: #ff9001;
+    text-transform: uppercase;
+}
+
+header .logo span:nth-child(3){
+    font-family: "Podkova ExtraBold";
+    font-size: 62px;
+    line-height: 42px;
+    color: #ff9001;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+header .logo span:nth-child(4){
+    font-family: "Podkova";
+    font-size: 13px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.60em;
+}
+
+header .contacts span[class*="icon"]{
+    font-size: 55px;
+}
+
+header .contacts a{
+    text-decoration: none;
+}
+
+header .contacts a:nth-child(2){
+    font-size: 33px;
+    line-height: 20px;
+    color: #ff692a;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+}
+
+header .contacts a:nth-child(3){
+    font-size: 17px;
+    line-height: 20px;
+    color: #ff692a;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+header .menu img{
+    background-position: center;
+}
+
+header .menu .menuHead a{
+    font-size: 17px;
+    line-height: 20px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .name h2{
+    font-size: 50px;
+    line-height: 80px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .name h1{
+    font-family: "Podkova";
+    font-size: 133px;
+    line-height: 133px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .name span{
+    font-size: 25px;
+    line-height: 70px;
+    color: #ffffff;
+    letter-spacing: 0.35em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+header .registrathion button:nth-child(1){
+    font-size: 17px;
+    line-height: 55px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    width: 200px;
+    background-color: #ff692a;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .registrathion button:nth-child(2){
+    font-size: 17px;
+    line-height: 55px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    width: 200px;
+    background-color: #ff9001;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+img.I{
+    text-align: center;
+}
+
+h4.ligtText{
+    font-size: 18px;
+    line-height: 70px;
+    color: #ffffff;
+    letter-spacing: 0.15em;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3.lightCaption{
+    font-size: 50px;
+    line-height: 70px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    text-align: center;
+}
+
+header .prew a{
+    height: 60px;
+    width: 30px;
+    text-decoration: none;
+}
+
+header .listInvestment .card span.TC{
+    font-size: 70px;
+    line-height: 40px;
+    color: #30363a;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+}
+
+header .listInvestment .card a{
+    font-size: 85px;
+    text-decoration: none;
+}
+
+header .listInvestment .card span[class^="%"]{
+    font-size: 45px;
+    line-height: 40px;
+    color: #ff9001;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+}
+
+header .listInvestment .card span[class^="day"]{
+    font-size: 18px;
+    line-height: 30px;
+    color: #ff692a;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+}
+
+header .next a{
+    height: 60px;
+    width: 30px;
+    text-decoration: none;
+}
+
+h4.darkText{
+    font-size: 18px;
+    line-height: 70px;
+    color: #05141b;
+    letter-spacing: 0.15em;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3.darkCaption{
+    font-size: 50px;
+    line-height: 70px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content form{
+    height: 650px;
+    width: 1170px;
+    background: #f7dfc0;
+}
+
+.content fieldset{
+    border: none;
+}
+
+.calculator form .plan label{
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+.calculator form .plan select{
+    height: 55px;
+    width: 505px;
+    font-size: 17px;
+    line-height: 55px;
+    letter-spacing: 0.025em;
+    border: none;
+}
+.calculator form .plan option{
+    font-size: 17px;
+    line-height: 55px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+}
+
+.calculator form .text label{
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.calculator form .text input{
+    height: 55px;
+    width: 300px;
+    font-size: 17px;
+    line-height: 55px;
+    letter-spacing: 0.025em;
+    border: none;
+}
+
+.calculator form .tariffAmount span{
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.calculator form .tariffAmount a{
+    font-size: 24px;
+    line-height: 30px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.calculator form .amount label{
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.calculator form .amount input{
+    height: 110px;
+    width: 1050px;
+    border: none;
+}
+
+.calculator form .profit .card1{
+    height: 50px;
+    width: 195px;
+    border: 1px solid #05141b;
+    background: #fcf1da;
+    text-align: center;
+}
+
+.calculator form .profit .card1 span:nth-child(2){
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.calculator form .profit .card1 span:nth-child(3){
+    font-size: 24px;
+    line-height: 30px;
+    color: #05141b;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.calculator form .profit .card2{
+    height: 50px;
+    width: 195px;
+    background: #ff9001;
+    text-align: center;
+}
+
+.calculator form .profit .card2 span:nth-child(2){
+    font-size: 17px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.calculator form .profit .card2 span:nth-child(3){
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.calculator form .profit .card3{
+    height: 50px;
+    width: 195px;
+    background: #ff692a;
+    text-align: center;
+}
+
+.calculator form .profit .card3 span:nth-child(2){
+    font-size: 17px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.calculator form .profit .card3 span:nth-child(3){
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.calculator form p{
+    width: 585px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+    font-weight: normal;
+    text-align: center;
+}
+
+.calculator form .money{
+    font-size: 17px;
+    line-height: 55px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    width: 210px;
+    background-color: #06141b;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about p{
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    letter-spacing: 0.025em;
+    font-weight: normal;
+}
+
+.about .license .lic{
+    height: 400px;
+    width: 260px;
+}
+
+.about .license .lic img{
+    width: 260px;
+    height: 345px;
+    border: 1px #4e585d;
+}
+
+.about .lic button{
+    height: 55px;
+    width: 260px;
+    font-size: 17px;
+    line-height: 55px;
+    color: #ffffff;
+    letter-spacing: 0.050em;
+    font-weight: bold;
+    background-color: #fc791b;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+}
+
+.about .license img:nth-child(4){
+    width: 260px;
+    height: 400px;
+    border: 1px #4e585d;
+}
+
+.presentation .img{
+    width: 1170px;
+    height: 650px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.presentation .img img{
+    margin-top: 175px;
+    margin-left: 510px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages div[clas^="item"]{
+    height: 110px;
+    width: 360px;
+}
+
+.advantages .item1 a{
+     font-size: 65px;
+     text-decoration: none;
+ }
+
+.advantages .item1 > span{
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+}
+
+.advantages .item1 p{
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    text-transform: capitalize;
+    font-weight: 300;
+    text-align: left;
+}
+
+.advantages .item2 a{
+    font-size: 65px;
+    text-decoration: none;
+}
+
+.advantages .item2 > span{
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right;
+}
+
+.advantages .item2 p{
+    font-size: 17px;
+    line-height: 30px;
+    color: #05141b;
+    text-transform: capitalize;
+    font-weight: 300;
+    text-align: right;
+}
+
+.advantages .checkin span:nth-child(2){
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.advantages .checkin span:nth-child(3){
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.025em;
+    color: #06151c;
+    font-weight: 300;
+}
+
+.advantages .checkin button{
+    height: 70px;
+    width: 270px;
+    font-size: 24px;
+    line-height: 70px;
+    color: #ffffff;
+    letter-spacing: 0.050em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+}
+
+.profitCharts a{
+    text-decoration: none;
+}
+
+.profitCharts .tableDeposits a{
+    font-size: 85px;
+}
+
+.tableDeposits > span{
+    font-size: 25px;
+    line-height: 48px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tableDeposits div{
+    height: 400px;
+    width: 305px;
+    background-color: #24aff4;
+}
+
+.dependenceChart > div{
+    height: 470px;
+    width: 470px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;: ;
+}
+
+.dependenceChart .TABLBIG span:nth-child(odd){
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.dependenceChart .TABLBIG span:nth-child(even){
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.profitCharts .tableWithdrawals > span{
+    font-size: 25px;
+    line-height: 48px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.profitCharts .tableWithdrawals a{
+    font-size: 85px;
+}
+
+.tableWithdrawals div{
+    height: 400px;
+    width: 305px;
+    background-color: #24aff4;
+}
+
+.profitCharts .information p{
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.profitCharts .growthChart div{
+    height: 375px;
+    width: 765px;
+    background-color: #ffffff;
+}
+
+.referalProgram .Referal p:nth-child(1){
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #05141b;
+    font-weight: bold;
+    text-align: center;
+}
+
+.referalProgram .Referal p:nth-child(2){
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #05141b;
+    font-weight: normal;
+    text-align: center;
+}
+
+.Referal div {
+    height: 470px;
+    width: 470px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Referal span{
+    font-size: 155px;
+    line-height: 58px;
+    letter-spacing: 0.025em;
+    color: #05141b;
+    font-weight: bold;
+    text-align: center;
+}
+
+.referalProgram .checkin h3{
+    font-size: 40px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.referalProgram .checkin button{
+    height: 70px;
+    width: 270px;
+    font-size: 24px;
+    line-height: 70px;
+    color: #ffffff;
+    letter-spacing: 0.050em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+}
+
+.pays .img a{
+    text-decoration: none;
+}
+
+.location .img a{
+    text-decoration: none;
+}
+
+header .logo img{
+    height: 100px;
+    width: 85px;
+}
+
+footer .logo span:nth-child(2){
+    font-family: "Podkova ExtraBold";
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 800;
+    color: #ff9001;
+    text-transform: uppercase;
+}
+
+footer .logo span:nth-child(3){
+    font-family: "Podkova ExtraBold";
+    font-size: 62px;
+    line-height: 42px;
+    color: #ff9001;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+footer .logo span:nth-child(4){
+    font-family: "Podkova";
+    font-size: 13px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.60em;
+}
+
+footer .copyright span{
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 0.025em;
+}
+
+footer .copyright a{
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+}
+
+footer li a{
+    font-size: 15px;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer .contacts span{
+    font-size: 15px;
+    line-height: 21px;
+    color: #ff9001;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+footer .contacts a:nth-child(2){
+    font-size: 15px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+}
+
+footer .contacts a:nth-child(4){
+    font-size: 15px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+}
+
+footer .contacts a:nth-child(6){
+    font-size: 15px;
+    line-height: 21px;
+    color: #ff6b28;
+    font-weight: normal;
+    letter-spacing: 0.025em;
+    text-decoration: underline;
+}
+
+.cardReviem a{
+    text-decoration: none;
+}
+
+.cardReviem .Emerson{
+    font-size: 20px;
+    line-height: 24px;
+    color: #ff9001;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+}
+
+.cardReviem .dayTime{
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 0.025em;
+}
+
+.cardReviem p{
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 0.025em;
+}
+
+.cardReviem .monsterat{
+    font-size: 133px;
+    line-height: 40px;
+    color: #17252b;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    font-family: "Montserrat";
+}
+
+.card10{
+    height: 375px;
+    width: 360px;
+}
+
+.card11{
+    height: 415px;
+    width: 360px;
+}
+
+.card11 .img{
+    width: 360px;
+    height: 250px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card12{
+    height: 305px;
+    width: 360px;
+}
+
+.card13{
+    height: 430px;
+    width: 360px;
+}
+
+.card14{
+    height: 335px;
+    width: 360px;
+}
+
+.card15{
+    height: 520px;
+    width: 360px;
+}
+
+.card16{
+    height: 430px;
+    width: 360px;
+}
+
+.card17{
+    height: 525px;
+    width: 360px;
+}
+
+.card18{
+    height: 415px;
+    width: 360px;
+}
+
+.card18 .img{
+    width: 360px;
+    height: 250px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pagination a{
+    text-decoration: none;
+}
+
+.pagination .pageNum li{
+    font-size: 17px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 0.025em;
+}
+
+.RateUs span.rewiem{
+    font-size: 30px;
+    line-height: 70px;
+    color: #ff9001;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+.RateUs form label{
+    font-size: 17px;
+    line-height: 100px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+}
+
+.RateUs form span{
+    font-size: 17px;
+    line-height: 100px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+}
+.RateUs .form button{
+    font-size: 17px;
+    line-height: 55px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    width: 200px;
+    background-color: #ff692a;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.RateUs .forma .vvv input{
+    height: 45px;
+    width: 1040px;
+    font-size: 17px;
+    line-height: 45px;
+    letter-spacing: 0.025em;
+    border: none;
 }
