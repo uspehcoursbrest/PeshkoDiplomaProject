@@ -10,27 +10,29 @@
 <body>
 <header>
     <div class="container">
-        <div class="logo">
-            <a href="#"><img src="img/png/logo.png" alt="#"></a>
-            <span>Atlantic</span>
-            <span>Oil</span>
-            <span>limited</span>
-        </div>
-        <div class="contacts">
-            <a href="#">
+        <div class="logCont clear">
+            <div class="logo clear">
+                <a href="#"><img src="img/png/logo.png" alt="#"></a>
+                <span>Atlantic</span>
+                <span>Oil</span>
+                <span>limited</span>
+            </div>
+            <div class="contacts clear">
+                <a href="#">
                 <span class="icon-1"><span class="path1"></span><span class="path2"></span><span class="path3"></span>
             </span>
-            </a>
-            <a href="tel:+447911123-456">+44 7911 123-456</a>
-            <a href="mailto:atlanticoil@support.cc">atlanticoil@support.cc</a>
-            <a href="#"><span class="icon-2"><span class="path1"></span><span class="path2"></span><span
-                    class="path3"></span><span class="path4"></span>
+                </a>
+                <a href="tel:+447911123-456">+44 7911 123-456</a>
+                <a href="mailto:atlanticoil@support.cc">atlanticoil@support.cc</a>
+                <a href="#"><span class="icon-2"><span class="path1"></span><span class="path2"></span><span
+                        class="path3"></span><span class="path4"></span>
             </span></a>
+            </div>
         </div>
         <div class="menu">
             <img src="img/png/menu.png" alt="#">
             <ul class="menuHead">
-                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Referal program</a></li>
                 <li><a href="#">new</a></li>
@@ -50,7 +52,6 @@
             <button>sign up</button>
         </div>
         <img class="I" src="img/png/I.png" alt="#">
-        <img src="" alt="">
         <h4 class="ligtText">atlantic oil limited</h4>
         <h3 class="lightCaption">Investment offers</h3>
         <div class="prew">
@@ -95,7 +96,7 @@
             <img class="I" src="img/png/I.png" alt="#">
             <h4 class="darkText">your profit</h4>
             <h3 class="darkCaption">Calculator</h3>
-            <form>
+            <form class="home">
                 <fieldset class="tariffAmount">
                     <div class="plan">
                         <label for="plan">Select plan:</label>
@@ -108,14 +109,16 @@
                         <label for="text">enter amount:</label>
                         <input type="text" id="text">
                     </div>
-                    <span>Deposit amount:</span>
-                    <a href="#">3001 $</a>
-                    <div class="amount">
-                        <label for="amount">Select amount:</label>
-                        <input type="text" id="amount">
+                    <div class="depAmount">
+                        <span>Deposit amount:</span>
+                        <a href="#">3001 $</a>
                     </div>
                 </fieldset>
-                <div class="profit">
+                <div class="amount">
+                    <label for="amount">Select amount:</label>
+                    <input type="text" id="amount">
+                </div>
+                <div class="profit clear">
                     <div class="card1">
                         <a href="#"></a>
                         <span>Selected plan:</span>
@@ -153,7 +156,12 @@
             <img class="I" src="img/png/I.png" alt="#">
             <h4 class="ligtText">atlantic oil limited</h4>
             <h3 class="lightCaption">About company</h3>
-            <div class="license">
+            <div class="license clear">
+                <img src="img/img/licenseInfo.jpg" alt="#">
+                <div class="lic">
+                    <img src="img/img/license.jpg" alt="#">
+                    <button>Check company</button>
+                </div>
                 <p>Atlantic Oil Limited vivamus eget molestie massa. Aliquam at dolor semper erat eleifend vehicula
                     tincidunt ac elit. Donec blandit ligula in ultrices suscipit. Ut quam sapien, dignissim in mi nec,
                     porta dignissim sem. In imperdiet laoreet risus. Fusce purus urna, rutrum quis orci auctor,
@@ -165,11 +173,6 @@
                     lacus, in maximus enim nisi eu nulla. Vivamus pretium nunc at purus rutrum commodo. Aliquam sed leo
                     nec lorem laoreet blandit. Sed nec ipsum egestas, vestibulum lacus ac, volutpat elit.
                 </p>
-                <div class="lic">
-                    <img src="img/img/license.jpg" alt="#">
-                    <button>Check company</button>
-                </div>
-                <img src="img/img/licenseInfo.jpg" alt="#">
                 <p>Aliquam a lacus id tortor dignissim tempor ut id magna. Nunc vulputate congue molestie. Donec tempus
                     quam at lectus luctus sagittis. Integer diam ex, viverra ut convallis et, porta eget nibh. Cras
                     molestie egestas elit, nec ultrices nisl blandit at. Morbi eros eros, eleifend ac pretium ut,
@@ -193,45 +196,52 @@
             <img class="I" src="img/png/I.png" alt="#">
             <h4 class="darkText">Our advantages</h4>
             <h3 class="darkCaption">Why choose us?</h3>
-            <div class="item1">
-                <a href="#"><span class="icon-14"><span class="path1"></span><span class="path2"></span></span></a>
-                <span>FAVORABLE INVESTMENTS</span>
-                <p>We will provide you a stable profit which won’t depend on a deposit.</p>
-            </div>
-            <div class="item1">
-                <a href="#"><span class="icon-15"><span class="path1"></span><span class="path2"></span><span
-                        class="path3"></span></span></a>
-                <span>USER-FRIENDLY INTERFACE</span>
-                <p>The personal area is simple and clear, all information and buttons are placed on the main page.</p>
-            </div>
-            <div class="item1">
-                <a href="#"><span class="icon-16"><span class="path1"></span><span class="path2"></span><span
-                        class="path3"></span></span></a>
-                <span>REFERRAL PROGRAM</span>
-                <p>We do increase profit and minimize expenses, and investors get a favorable percentage.</p>
-            </div>
-            <img src="img/png/ADVANT.png" alt="#">
-            <div class="item2">
-                <span>INVESTMENTS SCHEDULE</span>
-                <p>You can independently trace the plan of investments on our website.</p>
-                <a href="#"><span class="icon-17"><span class="path1"></span><span class="path2"></span><span
-                        class="path3"></span><span class="path4"></span></span></a>
-            </div>
-            <div class="item2">
-                <span>FAST WITHDRAWAL</span>
-                <p>The request for withdrawal is considered immediately, and funds are transferred in 48 hours.</p>
-                <a href="#"><span class="icon-18"><span class="path1"></span><span class="path2"></span></span></a>
-            </div>
-            <div class="item2">
-                <span>USER-FRIENDLY CHAT</span>
-                <p>We are always ready to help. Employee of a technical support is available round the clock.</p>
-                <a href="#"><span class="icon-19"><span class="path1"></span><span class="path2"></span><span
-                        class="path3"></span></span></a>
+            <div class="imgAdv clear" style="background-image: url(img/png/ADVANT.png);">
+                <div class="itemLeft">
+                    <div class="item1">
+                        <a href="#"><span class="icon-14"><span class="path1"></span><span class="path2"></span></span></a>
+                        <span>FAVORABLE INVESTMENTS</span>
+                        <p>We will provide you a stable profit which won’t depend on a deposit.</p>
+                    </div>
+                    <div class="item1">
+                        <a href="#"><span class="icon-15"><span class="path1"></span><span class="path2"></span><span
+                                class="path3"></span></span></a>
+                        <span>USER-FRIENDLY INTERFACE</span>
+                        <p>The personal area is simple and clear, all information and buttons are placed on the main page.</p>
+                    </div>
+                    <div class="item1">
+                        <a href="#"><span class="icon-16"><span class="path1"></span><span class="path2"></span><span
+                                class="path3"></span></span></a>
+                        <span>REFERRAL PROGRAM</span>
+                        <p>We do increase profit and minimize expenses, and investors get a favorable percentage.</p>
+                    </div>
+                </div>
+                <div class="itemRight">
+                    <div class="item2">
+                        <span>INVESTMENTS SCHEDULE</span>
+                        <p>You can independently trace the plan of investments on our website.</p>
+                        <a href="#"><span class="icon-17"><span class="path1"></span><span class="path2"></span><span
+                                class="path3"></span><span class="path4"></span></span></a>
+                    </div>
+                    <div class="item2">
+                        <span>FAST WITHDRAWAL</span>
+                        <p>The request for withdrawal is considered immediately, and funds are transferred in 48 hours.</p>
+                        <a href="#"><span class="icon-18"><span class="path1"></span><span class="path2"></span></span></a>
+                    </div>
+                    <div class="item2">
+                        <span>USER-FRIENDLY CHAT</span>
+                        <p>We are always ready to help. Employee of a technical support is available round the clock.</p>
+                        <a href="#"><span class="icon-19"><span class="path1"></span><span class="path2"></span><span
+                                class="path3"></span></span></a>
+                    </div>
+                </div>
             </div>
             <div class="checkin">
                 <img src="img/png/advlogo.png" alt="#">
-                <span>atlantic oil limited</span>
-                <span>Start earning with us right now</span>
+                <div class="chekSpan">
+                    <span>atlantic oil limited</span>
+                    <br><span>Start earning with us right now</span>
+                </div>
                 <button>Sign up now</button>
             </div>
         </div>
@@ -308,20 +318,22 @@
 </div>
 <footer>
     <div class="container">
-        <div class="logo">
-            <img src="img/png/logofot.png" alt="#">
-            <span>Atlantic</span>
-            <span>Oil</span>
-            <span>limited</span>
-        </div>
-        <div class="copyright">
-            <span class="left">&#169; 2018 Atlantic Oil LTD.</span>
-            <a href="#">All rights reserved.</a>
+        <div class="logoCopyr">
+            <div class="logo">
+                <img src="img/png/logofot.png" alt="#">
+                <span>Atlantic</span>
+                <span>Oil</span>
+                <span>limited</span>
+            </div>
+            <div class="copyright">
+                <span class="left">&#169; 2018 Atlantic Oil LTD.</span>
+                <a href="#">All rights reserved.</a>
+            </div>
         </div>
         <ul class="fotMenu">
             <li class="col">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Referal program</a></li>
                     <li><a href="#">news</a></li>
