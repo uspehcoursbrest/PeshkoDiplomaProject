@@ -560,17 +560,24 @@ h3.darkCaption{
 
 .advantages .itemLeft{
     float: left;
-    width: 360px;
+    width: 365px;
 }
 
 .advantages .itemRight{
     float: right;
-    width: 360px;
+    width: 365px;
+}
+
+.advantages .item1{
+    position: relative;
+    display: block;
 }
 
 .advantages .item1 a{
-     font-size: 65px;
-     text-decoration: none;
+    font-size: 65px;
+    line-height: 65px;
+    text-decoration: none;
+    position: absolute;
  }
 
 .advantages .item1 > span{
@@ -580,20 +587,31 @@ h3.darkCaption{
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
+    margin-left: 90px;
+    display: block;
 }
 
 .advantages .item1 p{
     font-size: 17px;
     line-height: 30px;
     color: #05141b;
-    text-transform: capitalize;
     font-weight: 300;
     text-align: left;
+    margin-left: 90px;
+}
+
+.advantages .item2{
+    position: relative;
+    display: block;
 }
 
 .advantages .item2 a{
     font-size: 65px;
+    line-height: 65px;
     text-decoration: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
 .advantages .item2 > span{
@@ -603,28 +621,32 @@ h3.darkCaption{
     text-transform: uppercase;
     font-weight: bold;
     text-align: right;
+    display: block;
+    margin-right: 90px;
 }
 
 .advantages .item2 p{
     font-size: 17px;
     line-height: 30px;
     color: #05141b;
-    text-transform: capitalize;
     font-weight: 300;
     text-align: right;
+    margin-right: 90px;
 }
 
 .advantages .checkin{
-    display: inline-block;
+    display: table;
+    width: 100%;
 }
 
 .advantages .checkin img{
-    display: block;
-    float: left;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .advantages .checkin .chekSpan{
-    float: left;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .advantages .checkin span:nth-child(1){
@@ -657,8 +679,9 @@ h3.darkCaption{
     text-transform: uppercase;
     background-color: transparent;
     border: 3px solid #ffffff;
-    display: block;
+    display: table-cell;
     float: left;
+    vertical-align: middle;
 }
 
 .profitCharts a{
@@ -669,6 +692,51 @@ h3.darkCaption{
     font-size: 85px;
 }
 
+.deposits{
+    position: relative;
+}
+
+.tableDeposits{
+    width: 305px;
+    float: left;
+    display: block;
+}
+
+.tableWithdrawals{
+    width: 305px;
+    float: right;
+    display: block;
+}
+
+.tabelD{
+    display: table;
+    width: 100%;
+    border: 3px solid #ffffff;
+}
+
+.tabelD .TD{
+    display: table-row;
+    border: 3px solid #ffffff;
+}
+
+.tabelD .TD .iteTD{
+    display: table-cell;
+}
+
+.tabelD .TD div:nth-child(1){
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    font-weight: 300;
+    padding-left: 20px;
+}
+
+.tabelD .TD div:nth-child(2){
+    color: #ff692a;
+    font-weight: bold;
+}
+
 .tableDeposits > span{
     font-size: 25px;
     line-height: 48px;
@@ -677,19 +745,47 @@ h3.darkCaption{
     font-weight: bold;
 }
 
-.tableDeposits div{
-    height: 400px;
-    width: 305px;
-    background-color: #24aff4;
-}
+/*.tableDeposits div{*/
+    /*height: 400px;*/
+    /*width: 305px;*/
+    /*background-color: #24aff4;*/
+/*}*/
 
-.dependenceChart > div{
-    height: 470px;
+.dependenceChart .TABLBIG{
     width: 470px;
+    height: 470px;
+    float: left;
+    position: absolute;
+    left: 350px;
+    bottom: -17px;
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;: ;
+    background-position: center;
+}
+
+.dependenceChart .TABLBIG a:nth-child(1){
+    position: absolute;
+    display: block;
+    left: 185px;
+    bottom: 285px;
+    text-align: center;
+}
+
+.dependenceChart .TABLBIG a:nth-child(2){
+    position: absolute;
+    display: block;
+    left: 110px;
+    bottom: 145px;
+    text-align: right;
+}
+
+.dependenceChart .TABLBIG a:nth-child(3){
+    position: absolute;
+    display: block;
+    left: 255px;
+    bottom: 145px;
+    text-align: left;
 }
 
 .dependenceChart .TABLBIG span:nth-child(odd){
@@ -698,6 +794,7 @@ h3.darkCaption{
     letter-spacing: 0.025em;
     color: #ffffff;
     font-weight: bold;
+    display: block;
 }
 
 .dependenceChart .TABLBIG span:nth-child(even){
@@ -707,6 +804,7 @@ h3.darkCaption{
     color: #ffffff;
     font-weight: normal;
     text-transform: capitalize;
+    display: block;
 }
 
 .profitCharts .tableWithdrawals > span{
@@ -721,11 +819,16 @@ h3.darkCaption{
     font-size: 85px;
 }
 
-.tableWithdrawals div{
-    height: 400px;
-    width: 305px;
-    background-color: #24aff4;
+.tableWithdrawals .tabelD .TD div:nth-child(2){
+    color: #ffa42f;
+    font-weight: bold;
 }
+
+/*.tableWithdrawals div{*/
+    /*height: 400px;*/
+    /*width: 305px;*/
+    /*background-color: #24aff4;*/
+/*}*/
 
 .profitCharts .information{
     float: left;
@@ -809,12 +912,26 @@ h3.darkCaption{
     border: 3px solid #ffffff;
 }
 
+.pays{
+    display: table;
+    width: 100%;
+}
+
+.pays div.img{
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .pays .img a{
     text-decoration: none;
 }
 
 .location .img a{
     text-decoration: none;
+}
+
+footer{
+    width: 100%;
 }
 
 footer .logoCopyr{
