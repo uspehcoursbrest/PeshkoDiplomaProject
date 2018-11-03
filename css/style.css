@@ -21,7 +21,6 @@ ul{
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    background-color: #6c6c6c;
 }
 
 .clear::after{
@@ -32,6 +31,21 @@ ul{
 
 .active a {
     color: #ff9001;
+}
+
+header,
+.content .calculator,
+.content .about,
+.content .advantages,
+.content .profitCharts,
+.content .referalProgram,
+.content .payments,
+.content .location,
+footer{
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header .logo{
@@ -483,7 +497,6 @@ h3.darkCaption{
     border: none;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .about p{
@@ -711,16 +724,16 @@ h3.darkCaption{
 .tabelD{
     display: table;
     width: 100%;
-    border: 3px solid #ffffff;
+    border: 1px solid rgba(255,255,255,0.29);
 }
 
 .tabelD .TD{
     display: table-row;
-    border: 3px solid #ffffff;
 }
 
 .tabelD .TD .iteTD{
     display: table-cell;
+    border-bottom: 1px solid rgba(255,255,255,0.29);
 }
 
 .tabelD .TD div:nth-child(1){
