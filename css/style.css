@@ -41,6 +41,7 @@ header,
 .content .referalProgram,
 .content .payments,
 .content .location,
+.content .RateUs,
 footer{
     -webkit-background-size: cover;
     background-size: cover;
@@ -48,7 +49,7 @@ footer{
     background-position: center;
 }
 
-header .page1{
+header.page1{
     height: 1695px;
 }
 
@@ -78,6 +79,10 @@ header .page1{
 
 .content .location{
     height: 640px;
+}
+
+.content .RateUs{
+    height: 2615px;
 }
 
 footer{
@@ -215,7 +220,7 @@ header .menu .menuHead .active a{
     color: #ff9001;
 }
 
-header .menuHead li.active{
+header .menuHead li:first-child{
     margin-left: 15px;
 }
 
@@ -1149,21 +1154,75 @@ h3.darkCaption{
     left: 465px;
 }
 
-footer .foot1 > div{
-    display: inline-block;
-    padding-left: 70px;
+footer{
+    padding: 120px 0;
+}
+
+footer .foot100 div.foot1,
+footer .foot100 div.foot2,
+footer .foot100 div.foot3{
+    float: left;
+}
+
+footer .foot100 div.foot1{
+    width: 200px;
+    display: block;
+}
+
+footer .foot100 div.foot2{
+    width: 380px;
+    display: block;
+    padding-left: 90px;
+}
+
+footer .foot100 div.foot3{
+    width: 345px;
+    display: block;
+    padding-left: 140px;
+}
+
+.foot100 .foot2 .col1,
+.foot100 .foot2 .col2{
+    float: left;
+    display: block;
+}
+
+.foot100 .foot2 .col1{
+    width: 155px;
+}
+
+.foot100 .foot2 .col2{
+    width: 130px;
+    padding-left: 55px;
 }
 
 footer .logoCopyr{
-    width: 200px;
+    display: block;
+    position: relative;
 }
 
-footer .logo img{
+footer .logoCopyr .logo{
+    width: 200px;
+    float: left;
+    height: 100px;
+    padding-top: 10px;
+}
+
+footer .logoCopyr .logo a{
     height: 100px;
     width: 85px;
+    display: block;
+    float: left;
 }
 
-footer .logo span:nth-child(2){
+footer .logoCopyr .logo div{
+    margin-left: 100px;
+    display: block;
+    text-align: left;
+    padding-top: 5px;
+}
+
+footer .logo div span:nth-child(1){
     font-family: "Podkova ExtraBold";
     font-size: 20px;
     line-height: 20px;
@@ -1172,7 +1231,7 @@ footer .logo span:nth-child(2){
     text-transform: uppercase;
 }
 
-footer .logo span:nth-child(3){
+footer .logo div span:nth-child(2){
     font-family: "Podkova ExtraBold";
     font-size: 62px;
     line-height: 42px;
@@ -1181,7 +1240,7 @@ footer .logo span:nth-child(3){
     text-transform: uppercase;
 }
 
-footer .logo span:nth-child(4){
+footer .logo div span:nth-child(3){
     font-family: "Podkova";
     font-size: 13px;
     line-height: 20px;
@@ -1191,12 +1250,19 @@ footer .logo span:nth-child(4){
     letter-spacing: 0.60em;
 }
 
+footer .logoCopyr .copyright{
+    display: block;
+    top: 40px;
+    position: relative;
+}
+
 footer .copyright span{
     font-size: 15px;
     line-height: 24px;
     color: #ffffff;
     font-weight: normal;
     letter-spacing: 0.025em;
+    padding-top: 40px;
 }
 
 footer .copyright a{
@@ -1206,14 +1272,6 @@ footer .copyright a{
     font-weight: normal;
     letter-spacing: 0.025em;
     text-decoration: none;
-}
-
-footer .fotMenu{
-    width: 350px;
-}
-
-footer .fotMenu .col ul{
-    display: inline-block;
 }
 
 footer li a{
@@ -1238,6 +1296,11 @@ footer .contacts span{
     letter-spacing: 0.025em;
     text-transform: uppercase;
     display: block;
+    padding-top: 25px;
+}
+
+footer .contacts span:nth-child(1){
+    padding-top: 15px;
 }
 
 footer .contacts a:nth-child(2){
@@ -1270,8 +1333,134 @@ footer .contacts a:nth-child(6){
     display: block;
 }
 
-header .page22{
-    height: 375px;
+/*footer .foot1 > div{*/
+    /*display: inline-block;*/
+    /*padding-left: 70px;*/
+/*}*/
+
+/*footer .logoCopyr{*/
+    /*width: 200px;*/
+/*}*/
+
+/*footer .logo img{*/
+    /*height: 100px;*/
+    /*width: 85px;*/
+/*}*/
+
+/*footer .logo span:nth-child(2){*/
+    /*font-family: "Podkova ExtraBold";*/
+    /*font-size: 20px;*/
+    /*line-height: 20px;*/
+    /*font-weight: 800;*/
+    /*color: #ff9001;*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+/*footer .logo span:nth-child(3){*/
+    /*font-family: "Podkova ExtraBold";*/
+    /*font-size: 62px;*/
+    /*line-height: 42px;*/
+    /*color: #ff9001;*/
+    /*font-weight: 800;*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+/*footer .logo span:nth-child(4){*/
+    /*font-family: "Podkova";*/
+    /*font-size: 13px;*/
+    /*line-height: 20px;*/
+    /*color: #ffffff;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: bold;*/
+    /*letter-spacing: 0.60em;*/
+/*}*/
+
+/*footer .copyright span{*/
+    /*font-size: 15px;*/
+    /*line-height: 24px;*/
+    /*color: #ffffff;*/
+    /*font-weight: normal;*/
+    /*letter-spacing: 0.025em;*/
+/*}*/
+
+/*footer .copyright a{*/
+    /*font-size: 15px;*/
+    /*line-height: 24px;*/
+    /*color: #ffffff;*/
+    /*font-weight: normal;*/
+    /*letter-spacing: 0.025em;*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*footer .fotMenu{*/
+    /*width: 350px;*/
+/*}*/
+
+/*footer .fotMenu .col ul{*/
+    /*display: inline-block;*/
+/*}*/
+
+/*footer li a{*/
+    /*font-size: 15px;*/
+    /*line-height: 50px;*/
+    /*color: #ffffff;*/
+    /*font-weight: bold;*/
+    /*letter-spacing: 0.025em;*/
+    /*text-decoration: none;*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+/*footer .contacts{*/
+    /*width: 345px;*/
+/*}*/
+
+/*footer .contacts span{*/
+    /*font-size: 15px;*/
+    /*line-height: 21px;*/
+    /*color: #ff9001;*/
+    /*font-weight: bold;*/
+    /*letter-spacing: 0.025em;*/
+    /*text-transform: uppercase;*/
+    /*display: block;*/
+/*}*/
+
+/*footer .contacts a:nth-child(2){*/
+    /*font-size: 15px;*/
+    /*line-height: 21px;*/
+    /*color: #ffffff;*/
+    /*font-weight: normal;*/
+    /*letter-spacing: 0.025em;*/
+    /*text-decoration: none;*/
+    /*display: block;*/
+/*}*/
+
+/*footer .contacts a:nth-child(4){*/
+    /*font-size: 15px;*/
+    /*line-height: 21px;*/
+    /*color: #ffffff;*/
+    /*font-weight: normal;*/
+    /*letter-spacing: 0.025em;*/
+    /*text-decoration: none;*/
+    /*display: block;*/
+/*}*/
+
+/*footer .contacts a:nth-child(6){*/
+    /*font-size: 15px;*/
+    /*line-height: 21px;*/
+    /*color: #ff6b28;*/
+    /*font-weight: normal;*/
+    /*letter-spacing: 0.025em;*/
+    /*text-decoration: underline;*/
+    /*display: block;*/
+/*}*/
+
+header{
+    height: 370px;
+}
+
+.content .RateUs .container > img:first-child{
+    padding-top: 20px;
+    padding-left: 585px;
 }
 
 .cardReviem a{
@@ -1300,6 +1489,7 @@ header .page22{
     color: #ffffff;
     font-weight: normal;
     letter-spacing: 0.025em;
+    padding-top: 35px;
 }
 
 .cardReviem .monsterat{
@@ -1309,21 +1499,31 @@ header .page22{
     font-weight: bold;
     letter-spacing: 0.025em;
     font-family: "Montserrat";
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: -25px;
 }
 
 .cardReviem{
-    margin: 0 -20px;
+    margin: 0 -15px;
 }
 
 .cards{
     width: 33.333%;
     float: left;
     padding: 0 20px;
+    margin-top: 80px;
 }
 
 .card10{
     height: 375px;
     width: 360px;
+    display: block;
+    border: 1px solid rgb(255, 255, 255, 0.29);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 45px 25px 70px 25px;
+    position: relative;
 }
 
 .card10 img{
@@ -1338,9 +1538,41 @@ header .page22{
     display: block;
 }
 
+.cardBloc{
+    display: table;
+}
+
+.cardBloc img{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cardBloc div{
+    display: table-cell;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+.cardBloc a{
+    padding-top: 10px;
+    padding-right: 15px;
+    display: block;
+    float: left;
+}
+
+.dayTime{
+    display: block;
+    padding-top: 10px;
+}
+
 .card11{
     height: 415px;
     width: 360px;
+    display: block;
+    border: 1px solid rgb(255, 255, 255, 0.29);
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    padding: 45px 25px 70px 25px;
 }
 
 .card11 .img{
@@ -1352,39 +1584,115 @@ header .page22{
     background-position: center;
 }
 
+.card11 .cardBloc{
+    display: table;
+    padding-top: 235px;
+}
+
+.card11 .cardBloc img{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card11 .cardBloc div{
+    display: table-cell;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+.card11 .cardBloc a{
+    padding-top: 10px;
+    padding-right: 15px;
+    display: block;
+    float: left;
+}
+
+.card11 .dayTime{
+    display: block;
+    padding-top: 10px;
+}
+
+.vidI{
+    display: block;
+    position: absolute;
+    top: -210px;
+    left: -33px;
+}
+
 .card12{
     height: 305px;
     width: 360px;
+    display: block;
+    border: 1px solid rgb(255, 255, 255, 0.29);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 45px 25px 70px 25px;
+    position: relative;
 }
 
 .card13{
     height: 430px;
     width: 360px;
+    display: block;
+    border: 1px solid rgb(255, 255, 255, 0.29);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 45px 25px 70px 25px;
+    position: relative;
+    margin-top: 40px;
 }
 
 .card14{
     height: 335px;
     width: 360px;
+    display: block;
+    border: 1px solid rgb(255, 255, 255, 0.29);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 45px 25px 70px 25px;
+    position: relative;
+    margin-top: 40px;
 }
 
 .card15{
     height: 520px;
     width: 360px;
+    display: block;
+    border: 1px solid rgb(255, 255, 255, 0.29);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 45px 25px 70px 25px;
+    position: relative;
+    margin-top: 40px;
 }
 
 .card16{
     height: 430px;
     width: 360px;
+    display: block;
+    border: 1px solid rgb(255, 255, 255, 0.29);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 45px 25px 70px 25px;
+    position: relative;
+    margin-top: 40px;
 }
 
 .card17{
     height: 525px;
     width: 360px;
+    display: block;
+    border: 1px solid rgb(255, 255, 255, 0.29);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 45px 25px 70px 25px;
+    position: relative;
+    margin-top: 40px;
 }
 
 .card18{
     height: 415px;
     width: 360px;
+    display: block;
+    border: 1px solid rgb(255, 255, 255, 0.29);
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    margin-top: 40px;
+    padding: 45px 25px 70px 25px;
 }
 
 .card18 .img{
@@ -1396,60 +1704,383 @@ header .page22{
     background-position: center;
 }
 
+.card18 .cardBloc{
+    display: table;
+    padding-top: 235px;
+}
+
+.card18 .cardBloc img{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card18 .cardBloc div{
+    display: table-cell;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+.card18 .cardBloc a{
+    padding-top: 10px;
+    padding-right: 15px;
+    display: block;
+    float: left;
+}
+
+.card18 .dayTime{
+    display: block;
+    padding-top: 10px;
+}
+
+.pagination{
+    padding-left: 370px;
+    padding-top: 135px;
+}
+
+.pagination li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .pagination a{
     text-decoration: none;
 }
 
-.pagination .pageNum li{
+.pagination .pageNum{
+    margin-left: 15px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.24);
+}
+
+.container .pagination .ii:nth-child(2){
+    padding-left: 0px;
+}
+
+.pagination .pageNum span{
     font-size: 17px;
     line-height: 30px;
     color: #ffffff;
     font-weight: normal;
     letter-spacing: 0.025em;
+    display: block;
+    padding-left: 40%;
+    padding-top: 15%;
+}
+
+.content .RateUs .container .ccI{
+    padding-top: 60px;
+    padding-left: 585px;
+}
+
+.RateUs .formP2{
+    width: 1165px;
+    height: 475px;
+    border: 1px solid rgb(255, 255, 255, 0.29);
+    background-color: rgba(5, 20, 27, 0);
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
+    padding: 55px 60px;
+    position: relative;
+}
+
+.RateUs .formP2 .forma{
+    border: none;
 }
 
 .RateUs span.rewiem{
     font-size: 30px;
-    line-height: 70px;
+    line-height: 100px;
     color: #ff9001;
     font-weight: bold;
     letter-spacing: 0.025em;
     text-transform: uppercase;
+    display: block;
+    padding-left: 375px;
 }
 
-.RateUs form label{
+.RateUs .formP2 label{
     font-size: 17px;
-    line-height: 100px;
+    line-height: 50px;
     color: #ffffff;
     font-weight: bold;
     letter-spacing: 0.025em;
 }
 
-.RateUs form span{
+.RateUs .formP2 span{
     font-size: 17px;
-    line-height: 100px;
+    line-height: 50px;
     color: #ffffff;
     font-weight: bold;
     letter-spacing: 0.025em;
 }
-.RateUs .form button{
+
+.RateUs .formP2 label > span:nth-child(1){
+    color: #ff6a29;
+}
+
+.RateUs .formP2 button{
     font-size: 17px;
     line-height: 55px;
     letter-spacing: 0.025em;
     text-align: center;
-    width: 200px;
-    background-color: #ff692a;
+    width: 155px;
     color: #ffffff;
     border: none;
     font-weight: bold;
     text-transform: uppercase;
+    position: relative;
+    display: block;
+    left: 435px;
+    top: 50px;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fb692c+0,fb8e05+100 */
+    background: #fb692c; /* Old browsers */
+    background: -moz-linear-gradient(left, #fb692c 0%, #fb8e05 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #fb692c 0%,#fb8e05 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #fb692c 0%,#fb8e05 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb692c', endColorstr='#fb8e05',GradientType=1 ); /* IE6-9 */
 }
 
 .RateUs .forma .vvv input{
+    color: #ffffff;
     height: 45px;
     width: 1040px;
     font-size: 17px;
     line-height: 45px;
     letter-spacing: 0.025em;
+    border: 1px solid rgb(79, 89, 94, 0.50);
+    background-color: rgba(6, 20, 27, 0.769);
+    box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.33);
+    display: block;
+}
+
+.RateUs .forma textarea{
+    color: #ffffff;
+    height: 115px;
+    width: 1040px;
+    display: block;
+    border: 1px solid rgb(79, 89, 94, 0.50);
+    background-color: rgba(6, 20, 27, 0.769);
+    box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.33);
+}
+
+.registrationPage{
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1430px;
+}
+
+.registrationPage .logo{
+    display: block;
+    padding-top: 290px;
+    margin-left: 540px;
+}
+
+.registrationPage .container > img{
+    display: block;
+    padding-top: 20px;
+    margin-left: 580px;
+}
+
+.formReg .z{
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.content .formRegLeft{
+    width: 320px;
+}
+
+.content .formRegCentr{
+    width: 320px;
+}
+
+.content .formRegRight{
+    width: 320px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.registrationPage form{
+    width: 1170px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 710px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
+    padding-left: 60px;
+    padding-top: 25px;
+    margin-top: 50px;
+
+}
+
+.formRegLeft > span,
+.formRegCentr > span,
+.formRegRight > span{
+    font-size: 17px;
+    line-height: 70px;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    color: #ff8f02;
+    text-transform: uppercase;
+}
+
+.formReg label{
+    font-size: 17px;
+    line-height: 50px;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+}
+
+.formReg .formRegLeft input{
+    padding-top: 20px;
+}
+
+.formReg label span:first-child{
+    color: #ff6a29;
+}
+
+.formReg input{
+    height: 50px;
+    width: 330px;
+    border: 1px solid rgb(79, 89, 94);
+    background-color: rgba(6, 20, 27, 0.769);
+    box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.33);
+}
+
+.formRegRight > span{
+    margin-bottom: 50px;
+    display: block;
+}
+
+.formRegRight .payForm{
+    margin-top: 10px;
+    position: relative;
+}
+
+.formRegRight .payForm div{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    display: block;
+    background-size: 30px;
+    background-color: #334148;
+    top: 20%;
+    right: 3%;
+}
+
+.formRegRight .PM img{
+    padding-top: 36%;
+    padding-left: 13%;
+}
+
+.formRegRight .P img{
+    padding-top: 26%;
+    padding-left: 40%;
+}
+
+.formRegRight .AZ img{
+    padding-top: 23%;
+    padding-left: 23%;
+}
+
+.formRegRight .Bit img{
+    padding-top: 23%;
+    padding-left: 33%;
+}
+
+.formRegRight .romb img{
+    padding-top: 20%;
+    padding-left: 33%;
+}
+
+.formRegRight .L img{
+    padding-top: 26%;
+    padding-left: 26%;
+}
+
+.agree{
+    padding-top: 25px;
+    display: block;
+    padding-left: 360px;
+}
+
+.agree input{
+    border: 1px solid rgb(79, 89, 94);
+    background-color: rgba(6, 20, 27, 0.769);
+    box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.33);
+    width: 20px;
+    height: 20px;
+}
+
+.agree label{
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.agree label span{
+    color: #ff9001;
+    text-decoration: underline;
+}
+
+.formRegistration button{
     border: none;
+    font-size: 17px;
+    line-height: 55px;
+    letter-spacing: 0.025em;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 200px;
+    height: 55px;
+    margin-top: 40px;
+    margin-left: 410px;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fb692c+0,fb8e05+100 */
+    background-color: #fb692c; /* Old browsers */
+    background-color: -moz-linear-gradient(left, #fb692c 0%, #fb8e05 100%); /* FF3.6-15 */
+    background-color: -webkit-linear-gradient(left, #fb692c 0%,#fb8e05 100%); /* Chrome10-25,Safari5.1-6 */
+    background-color: linear-gradient(to right, #fb692c 0%,#fb8e05 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb692c', endColorstr='#fb8e05',GradientType=1 ); /* IE6-9 */
+}
+
+.registrationPage .container > span:last-child{
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    font-weight: normal;
+    color: #ffffff;
+    text-transform: capitalize;
+    display: block;
+    margin-left: 490px;
+    margin-top: 30px;
 }
