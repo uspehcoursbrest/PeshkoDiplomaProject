@@ -184,7 +184,7 @@ header .contacts div a:nth-child(1){
     font-weight: bold;
 }
 
-header .contacts div a:nth-child(1) span{
+header .contacts div a:nth-child(1) sup{
     font-size: 17px;
 }
 
