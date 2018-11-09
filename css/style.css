@@ -115,21 +115,25 @@ header .logo div{
 
 header .logo div span:nth-child(1){
     font-family: "Podkova ExtraBold";
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 19px;
+    line-height: 19px;
     font-weight: 800;
     color: #ff9001;
     text-transform: uppercase;
+    display: block;
 }
 
 header .logo div span:nth-child(2){
     font-family: "Podkova ExtraBold";
     font-size: 62px;
-    line-height: 42px;
+    line-height: 43px;
     color: #ff9001;
     font-weight: 800;
     text-transform: uppercase;
     text-align: left;
+    display: block;
+    margin-left: -5px;
+    padding-top: 2px;
 }
 
 header .logo span:nth-child(3){
@@ -140,19 +144,22 @@ header .logo span:nth-child(3){
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.60em;
+    display: block;
+    margin-top: 0px;
 }
 
 header .contacts{
     width: 380px;
-    height: 55px;
+    height: 60px;
     float: right;
     display: table;
     vertical-align: middle;
+    padding-top: 10px;
 }
 
 header .contacts span[class*="icon"]{
-    font-size: 55px;
-    line-height: 55px;
+    font-size: 60px;
+    line-height: 60px;
 }
 
 header .contacts > a{
@@ -176,34 +183,57 @@ header .contacts a{
     text-decoration: none;
 }
 
+header .logCont .contacts a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
 header .contacts div a:nth-child(1){
     font-size: 33px;
     line-height: 20px;
     color: #ff692a;
     letter-spacing: 0.025em;
     font-weight: bold;
+    display: block;
 }
 
 header .contacts div a:nth-child(1) sup{
     font-size: 17px;
 }
 
-header .contacts a:nth-child(2){
+header .contacts div a:nth-child(2){
     font-size: 17px;
     line-height: 20px;
-    color: #ff692a;
+    color: #ff9001;
     letter-spacing: 0.05em;
     font-weight: 300;
     text-decoration: underline;
+    display: block;
+    padding-top: 15px;
 }
 
 header .menu{
-    padding-top: 45px;
+    padding-top: 40px;
 }
 
 header .menuHead li{
     display: inline-block;
     margin-left: 70px;
+}
+
+header .menu .menuHead li a:hover{
+    text-decoration: underline;
+    color: #ff692a;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 header .menu .menuHead a{
@@ -231,7 +261,7 @@ header .name h2{
     letter-spacing: 0.025em;
     font-weight: bold;
     text-transform: uppercase;
-    padding-top: 150px;
+    padding-top: 130px;
 }
 
 header .name h1{
@@ -242,6 +272,7 @@ header .name h1{
     letter-spacing: 0.025em;
     font-weight: bold;
     text-transform: uppercase;
+    padding-top: 5px;
 }
 
 header .name span{
@@ -255,7 +286,7 @@ header .name span{
 
 header .registrathion{
     display: inline-block;
-    padding-top: 125px;
+    padding-top: 100px;
 }
 
 header .registrathion button:nth-child(1){
@@ -287,9 +318,22 @@ header .registrathion button:nth-child(2){
     box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.11);
 }
 
-img.I{
+header .registrathion button:hover{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: gray;
+    color: #ff692a;
+    letter-spacing: 0.4em;
+}
+
+header img.I{
     display: block;
-    padding-top: 178px;
+    padding-top: 175px;
+    position: relative;
+    left: 50%;
 }
 
 h4.ligtText{
@@ -309,6 +353,8 @@ h3.lightCaption{
     letter-spacing: 0.025em;
     font-weight: bold;
     text-align: center;
+    margin-top: -10px;
+    display: block;
 }
 
 header .prew a{
@@ -369,6 +415,15 @@ h3.darkCaption{
     letter-spacing: 0.025em;
     font-weight: bold;
     text-align: center;
+    margin-top: -10px;
+    display: block;
+}
+
+.calculator img.I{
+    display: block;
+    padding-top: 120px;
+    position: relative;
+    left: 50%;
 }
 
 .content .home{
@@ -376,7 +431,7 @@ h3.darkCaption{
     width: 1170px;
     background: rgba(241,212,178,0.77);
     position: relative;
-    margin-top: 90px;
+    margin-top: 95px;
     box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.33);
 }
 
@@ -389,7 +444,7 @@ h3.darkCaption{
     display: inline-block;
     vertical-align: middle;
     margin-left: 45px;
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .calculator .home .plan label{
@@ -399,6 +454,7 @@ h3.darkCaption{
     font-weight: bold;
     letter-spacing: 0.025em;
     text-transform: uppercase;
+    display: block;
 }
 
 .calculator .home .plan select{
@@ -410,6 +466,7 @@ h3.darkCaption{
     border: none;
     display: block;
     box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.11);
+    margin-top: 5px;
 }
 .calculator .home .plan option{
     font-size: 17px;
@@ -425,6 +482,7 @@ h3.darkCaption{
     letter-spacing: 0.025em;
     font-weight: bold;
     text-transform: uppercase;
+    display: block;
 }
 
 .calculator .home .text input{
@@ -436,6 +494,21 @@ h3.darkCaption{
     border: none;
     display: block;
     box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.11);
+    margin-top: 5px;
+}
+
+.calculator .home .plan select:hover,
+.calculator .home .text input:hover,
+.calculator .home .amount input:hover{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: transparent;
+    color: #ff692a;
+    border: 1px solid rgb(0, 0, 0, 0.50);
+    font-size: 17px;
 }
 
 .calculator .home .tariffAmount .depAmount span{
@@ -445,6 +518,8 @@ h3.darkCaption{
     letter-spacing: 0.025em;
     font-weight: normal;
     text-transform: capitalize;
+    display: block;
+    margin-top: 30px;
 }
 
 .calculator .home .tariffAmount .depAmount a{
@@ -455,6 +530,7 @@ h3.darkCaption{
     font-weight: bold;
     text-decoration: none;
     display: block;
+    margin-top: 0px;
 }
 
 .calculator .home .amount{
@@ -471,6 +547,8 @@ h3.darkCaption{
     letter-spacing: 0.025em;
     font-weight: bold;
     text-transform: uppercase;
+    display: block;
+    margin-top: -20px;
 }
 
 .calculator .home .amount input{
@@ -480,7 +558,7 @@ h3.darkCaption{
 }
 
 .calculator .home .profit{
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 40px;
     width: 100%;
 }
@@ -571,7 +649,7 @@ h3.darkCaption{
     font-weight: normal;
     text-align: center;
     display: block;
-    padding: 55px 295px 0px 295px;
+    padding: 45px 285px 0px 285px;
 }
 
 .calculator .home .money{
@@ -588,12 +666,28 @@ h3.darkCaption{
     display: block;
     position: absolute;
     left: 480px;
-    bottom: -50px;
+    bottom: -25px;
     box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
 }
 
-.about .container .I{
+.calculator .home .money:hover{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(0, 0, 0, 0.50);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.about img.I{
+    display: block;
     padding-top: 80px;
+    position: relative;
+    left: 50%;
 }
 
 .about .license{
@@ -607,6 +701,7 @@ h3.darkCaption{
     color: rgb(255, 255, 255);
     letter-spacing: 0.025em;
     font-weight: normal;
+
 }
 
 .about .license span{
@@ -615,12 +710,12 @@ h3.darkCaption{
 }
 
 .about .license p:nth-child(4){
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 .about p:last-child{
     width: auto;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 .about .license .lic{
@@ -628,6 +723,8 @@ h3.darkCaption{
     width: 260px;
     float: right;
     position: relative;
+    margin-top: -10px;
+    display: block;
 }
 
 .about .license .lic img{
@@ -636,6 +733,11 @@ h3.darkCaption{
     border: 1px solid rgb(255, 255, 255, 0.29);
     position: absolute;
     display: block;
+    border-bottom: none;
+}
+
+.about .license .lic img{
+    border-bottom: none;
 }
 
 .about .lic button{
@@ -662,16 +764,30 @@ h3.darkCaption{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb692c', endColorstr='#fb8e05',GradientType=1 ); /* IE6-9 */
 }
 
+.about .lic button:hover{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background: transparent;
+    color: #fb692c;
+    border: 1px solid rgb(255, 255, 255, 0.29);
+    box-shadow: inset 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
+}
+
 .about .license > img{
     width: 260px;
     height: 400px;
     float: right;
     margin-left: 40px;
     border: 1px solid rgb(255, 255, 255, 0.29);
+    margin-top: -10px;
+    display: block;
 }
 
 .presentation{
-    padding-top: 115px;
+    padding-top: 105px;
 }
 
 .presentation .img{
@@ -694,8 +810,20 @@ h3.darkCaption{
     background-position: center;
 }
 
+.presentation .img .ligtText{
+    font-size: 18px;
+    line-height: 70px;
+    color: #ffffff;
+    letter-spacing: 0.025em;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
 .advantages .container .I{
+    display: block;
     padding-top: 120px;
+    position: relative;
+    left: 50%;
 }
 
 .advantages .imgAdv{
@@ -715,25 +843,27 @@ h3.darkCaption{
 
 .advantages .itemLeft{
     float: left;
-    width: 365px;
+    width: 380px;
 }
 
 .advantages .itemRight{
     float: right;
-    width: 365px;
+    width: 380px;
 }
 
 .advantages .item1{
     position: relative;
     display: block;
-    padding-top: 75px;
+    padding-top: 60px;
 }
 
 .advantages .item1 a{
-    font-size: 65px;
-    line-height: 65px;
+    font-size: 90px;
+    line-height: 90px;
     text-decoration: none;
     position: absolute;
+    left: -15px;
+    top: 50px;
  }
 
 .advantages .item1 > span{
@@ -743,7 +873,7 @@ h3.darkCaption{
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
-    margin-left: 90px;
+    margin-left: 100px;
     display: block;
 }
 
@@ -753,22 +883,22 @@ h3.darkCaption{
     color: #05141b;
     font-weight: 300;
     text-align: left;
-    margin-left: 90px;
+    margin-left: 100px;
 }
 
 .advantages .item2{
     position: relative;
     display: block;
-    padding-top: 75px;
+    padding-top: 60px;
 }
 
 .advantages .item2 a{
-    font-size: 65px;
-    line-height: 65px;
+    font-size: 90px;
+    line-height: 90px;
     text-decoration: none;
     position: absolute;
-    top: 75px;
-    right: 0px;
+    top: 50px;
+    right: -10px;
 }
 
 .advantages .item2 > span{
@@ -779,7 +909,7 @@ h3.darkCaption{
     font-weight: bold;
     text-align: right;
     display: block;
-    margin-right: 90px;
+    margin-right: 100px;
 }
 
 .advantages .item2 p{
@@ -788,13 +918,14 @@ h3.darkCaption{
     color: #05141b;
     font-weight: 300;
     text-align: right;
-    margin-right: 90px;
+    margin-right: 100px;
 }
 
 .advantages .checkin{
     display: table;
     width: 100%;
-    padding-top: 195px;
+    padding-top: 225px;
+    padding-left: 25px;
 }
 
 .advantages .checkin img{
@@ -805,6 +936,7 @@ h3.darkCaption{
 .advantages .checkin .chekSpan{
     display: table-cell;
     vertical-align: middle;
+    padding-left: 25px;
 }
 
 .advantages .checkin span:nth-child(1){
@@ -824,6 +956,10 @@ h3.darkCaption{
     font-weight: 300;
 }
 
+.advantages .checkin a{
+    padding-top: 50px;
+}
+
 .advantages .checkin button{
     height: 70px;
     width: 270px;
@@ -840,6 +976,18 @@ h3.darkCaption{
     display: table-cell;
     float: left;
     vertical-align: middle;
+}
+
+.advantages .checkin button:hover{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background: transparent;
+    color: #05141b;
+    border: 1px solid rgb(0, 0, 0, 0.39);
+    box-shadow: inset 0px 0px 21px 0px rgba(0, 0, 0, 0.21);
 }
 
 .profitCharts .deposits{
@@ -1082,7 +1230,7 @@ h3.darkCaption{
 }
 
 .referalProgram .checkin h3{
-    padding-top: 100px;
+    padding-top: 85px;
     font-size: 40px;
     line-height: 30px;
     letter-spacing: 0.025em;
@@ -1101,7 +1249,7 @@ h3.darkCaption{
     width: 270px;
     font-size: 24px;
     line-height: 70px;
-    letter-spacing: 0.050em;
+    letter-spacing: 0.025em;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
@@ -1124,6 +1272,18 @@ h3.darkCaption{
     border-color: linear-gradient(to right, #fb692c 0%,#fb8e05 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
+.referalProgram .checkin button:hover{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: #fb692c;
+    color: white;
+    border: 2px solid rgb(250, 250, 250, 0.49);
+    box-shadow: inset 0px 0px 21px 0px rgba(0, 0, 0, 0.51);
+}
+
 .pays{
     display: table;
     width: 100%;
@@ -1133,6 +1293,7 @@ h3.darkCaption{
 .pays div.img{
     display: table-cell;
     vertical-align: middle;
+    padding-left: 30px;
 }
 
 .pays .img a{
@@ -1151,34 +1312,34 @@ h3.darkCaption{
     position: absolute;
     display: block;
     top: 205px;
-    left: 465px;
+    left: 475px;
 }
 
 footer{
-    padding: 120px 0;
+    padding: 90px 0px;
 }
 
 footer .foot100 div.foot1,
 footer .foot100 div.foot2,
 footer .foot100 div.foot3{
     float: left;
+    width: 100%;
 }
 
 footer .foot100 div.foot1{
-    width: 200px;
+    width: 20%;
     display: block;
 }
 
 footer .foot100 div.foot2{
-    width: 380px;
+    width: 49%;
     display: block;
-    padding-left: 90px;
+    padding-left: 100px;
 }
 
 footer .foot100 div.foot3{
-    width: 345px;
+    width: 31%;
     display: block;
-    padding-left: 140px;
 }
 
 .foot100 .foot2 .col1,
@@ -1188,12 +1349,11 @@ footer .foot100 div.foot3{
 }
 
 .foot100 .foot2 .col1{
-    width: 155px;
+    width: 54%;
 }
 
 .foot100 .foot2 .col2{
-    width: 130px;
-    padding-left: 55px;
+    width: 46%;
 }
 
 footer .logoCopyr{
@@ -1248,12 +1408,19 @@ footer .logo div span:nth-child(3){
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 0.60em;
+    display: block;
 }
 
 footer .logoCopyr .copyright{
     display: block;
-    top: 40px;
+    padding-top: 10px;
     position: relative;
+    width: 200px;
+
+}
+
+footer .copyright div{
+    display: table;
 }
 
 footer .copyright span{
@@ -1263,6 +1430,8 @@ footer .copyright span{
     font-weight: normal;
     letter-spacing: 0.025em;
     padding-top: 40px;
+    display: table-cell;
+
 }
 
 footer .copyright a{
@@ -1272,6 +1441,7 @@ footer .copyright a{
     font-weight: normal;
     letter-spacing: 0.025em;
     text-decoration: none;
+    display: block;
 }
 
 footer li a{
@@ -1282,6 +1452,27 @@ footer li a{
     letter-spacing: 0.025em;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+footer li a:hover,
+footer .foot3 .contacts a:hover{
+    text-decoration: underline;
+    color: #ff692a;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+footer .contacts a[href="mailto:atlanticoil@support.cc"]:hover{
+    text-decoration: underline;
+    color: #ffffff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 footer .contacts{
@@ -1296,7 +1487,7 @@ footer .contacts span{
     letter-spacing: 0.025em;
     text-transform: uppercase;
     display: block;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 
 footer .contacts span:nth-child(1){
@@ -1612,10 +1803,10 @@ header{
     padding-top: 10px;
 }
 
-.vidI{
+.cards .card11 .vidI{
     display: block;
     position: absolute;
-    top: -210px;
+    top: -33px;
     left: -33px;
 }
 
@@ -1693,6 +1884,13 @@ header{
     position: relative;
     margin-top: 40px;
     padding: 45px 25px 70px 25px;
+}
+
+.cards .card18 .vidI{
+    display: block;
+    position: absolute;
+    top: -33px;
+    left: -33px;
 }
 
 .card18 .img{
@@ -1842,6 +2040,18 @@ header{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb692c', endColorstr='#fb8e05',GradientType=1 ); /* IE6-9 */
 }
 
+.RateUs .formP2 button:hover{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background: transparent;
+    color: #fb692c;
+    border: 1px solid rgb(234, 142, 10, 0.49);
+    box-shadow: inset 0px 0px 21px 0px rgba(0, 0, 0, 0.51);
+}
+
 .RateUs .forma .vvv input{
     color: #ffffff;
     height: 45px;
@@ -1863,6 +2073,19 @@ header{
     border: 1px solid rgb(79, 89, 94, 0.50);
     background-color: rgba(6, 20, 27, 0.769);
     box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.33);
+}
+
+.RateUs .forma .vvv input:hover,
+.RateUs .forma textarea:hover{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: transparent;
+    color: #ff692a;
+    border: 1px solid rgb(0, 0, 0, 0.50);
+    font-size: 17px;
 }
 
 .registrationPage{
@@ -1902,26 +2125,6 @@ header{
 .content .formRegRight{
     width: 320px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .registrationPage form{
     width: 1170px;
@@ -1993,6 +2196,20 @@ header{
     background-color: #334148;
     top: 20%;
     right: 3%;
+}
+
+.formReg .formRegLeft input:hover,
+.formReg .formRegCentr input:hover,
+.formReg .formRegRight input:hover{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: rgb(250, 250, 250, 0.20);
+    color: #ff692a;
+    border: 1px solid rgb(0, 0, 0, 0.50);
+    font-size: 17px;
 }
 
 .formRegRight .PM img{
@@ -2071,6 +2288,18 @@ header{
     background-color: -webkit-linear-gradient(left, #fb692c 0%,#fb8e05 100%); /* Chrome10-25,Safari5.1-6 */
     background-color: linear-gradient(to right, #fb692c 0%,#fb8e05 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb692c', endColorstr='#fb8e05',GradientType=1 ); /* IE6-9 */
+}
+
+.formRegistration button:hover{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background: transparent;
+    color: #fb692c;
+    border: 1px solid rgb(234, 142, 10, 0.49);
+    box-shadow: inset 0px 0px 21px 0px rgba(0, 0, 0, 0.51);
 }
 
 .registrationPage .container > span:last-child{
