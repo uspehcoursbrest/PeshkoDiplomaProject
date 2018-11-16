@@ -86,6 +86,12 @@ header.page1{
     height: 2615px;
 }
 
+/*часы*/
+.itemsr{
+    display: none;
+}
+/*часы*/
+
 footer{
     height: 400px;
 }
@@ -220,6 +226,19 @@ header .contacts div a:nth-child(2){
 
 header .menu{
     padding-top: 40px;
+    position: relative;
+}
+
+header .menu:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 17px;
+    background-image: url("../img/png/menu.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70%;
+    left: 100px;
 }
 
 header .menuHead li{
@@ -1470,6 +1489,23 @@ footer .copyright a{
     display: block;
 }
 
+footer .col1,
+footer .col2{
+    position: relative;
+}
+
+footer ul:before{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 165px;
+    background-image: url("../img/png/menufoot.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 9%;
+    left: -30px;
+}
+
 footer li a{
     font-size: 15px;
     line-height: 50px;
@@ -1551,126 +1587,6 @@ footer .contacts a:nth-child(6){
     display: block;
 }
 
-/*footer .foot1 > div{*/
-    /*display: inline-block;*/
-    /*padding-left: 70px;*/
-/*}*/
-
-/*footer .logoCopyr{*/
-    /*width: 200px;*/
-/*}*/
-
-/*footer .logo img{*/
-    /*height: 100px;*/
-    /*width: 85px;*/
-/*}*/
-
-/*footer .logo span:nth-child(2){*/
-    /*font-family: "Podkova ExtraBold";*/
-    /*font-size: 20px;*/
-    /*line-height: 20px;*/
-    /*font-weight: 800;*/
-    /*color: #ff9001;*/
-    /*text-transform: uppercase;*/
-/*}*/
-
-/*footer .logo span:nth-child(3){*/
-    /*font-family: "Podkova ExtraBold";*/
-    /*font-size: 62px;*/
-    /*line-height: 42px;*/
-    /*color: #ff9001;*/
-    /*font-weight: 800;*/
-    /*text-transform: uppercase;*/
-/*}*/
-
-/*footer .logo span:nth-child(4){*/
-    /*font-family: "Podkova";*/
-    /*font-size: 13px;*/
-    /*line-height: 20px;*/
-    /*color: #ffffff;*/
-    /*text-transform: uppercase;*/
-    /*font-weight: bold;*/
-    /*letter-spacing: 0.60em;*/
-/*}*/
-
-/*footer .copyright span{*/
-    /*font-size: 15px;*/
-    /*line-height: 24px;*/
-    /*color: #ffffff;*/
-    /*font-weight: normal;*/
-    /*letter-spacing: 0.025em;*/
-/*}*/
-
-/*footer .copyright a{*/
-    /*font-size: 15px;*/
-    /*line-height: 24px;*/
-    /*color: #ffffff;*/
-    /*font-weight: normal;*/
-    /*letter-spacing: 0.025em;*/
-    /*text-decoration: none;*/
-/*}*/
-
-/*footer .fotMenu{*/
-    /*width: 350px;*/
-/*}*/
-
-/*footer .fotMenu .col ul{*/
-    /*display: inline-block;*/
-/*}*/
-
-/*footer li a{*/
-    /*font-size: 15px;*/
-    /*line-height: 50px;*/
-    /*color: #ffffff;*/
-    /*font-weight: bold;*/
-    /*letter-spacing: 0.025em;*/
-    /*text-decoration: none;*/
-    /*text-transform: uppercase;*/
-/*}*/
-
-/*footer .contacts{*/
-    /*width: 345px;*/
-/*}*/
-
-/*footer .contacts span{*/
-    /*font-size: 15px;*/
-    /*line-height: 21px;*/
-    /*color: #ff9001;*/
-    /*font-weight: bold;*/
-    /*letter-spacing: 0.025em;*/
-    /*text-transform: uppercase;*/
-    /*display: block;*/
-/*}*/
-
-/*footer .contacts a:nth-child(2){*/
-    /*font-size: 15px;*/
-    /*line-height: 21px;*/
-    /*color: #ffffff;*/
-    /*font-weight: normal;*/
-    /*letter-spacing: 0.025em;*/
-    /*text-decoration: none;*/
-    /*display: block;*/
-/*}*/
-
-/*footer .contacts a:nth-child(4){*/
-    /*font-size: 15px;*/
-    /*line-height: 21px;*/
-    /*color: #ffffff;*/
-    /*font-weight: normal;*/
-    /*letter-spacing: 0.025em;*/
-    /*text-decoration: none;*/
-    /*display: block;*/
-/*}*/
-
-/*footer .contacts a:nth-child(6){*/
-    /*font-size: 15px;*/
-    /*line-height: 21px;*/
-    /*color: #ff6b28;*/
-    /*font-weight: normal;*/
-    /*letter-spacing: 0.025em;*/
-    /*text-decoration: underline;*/
-    /*display: block;*/
-/*}*/
 
 header{
     height: 370px;
@@ -1995,8 +1911,19 @@ header{
     box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.24);
 }
 
-.container .pagination .ii:nth-child(2){
+.container .pagination .li:nth-child(2){
     padding-left: 0px;
+}
+
+.pagination li:hover{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: rgb(255, 255, 255, 0.29);
+    color: #ff692a;
+    letter-spacing: 0.4em;
 }
 
 .pagination .pageNum span{
@@ -2367,6 +2294,10 @@ header{
         width: 980px;
     }
 
+    header .menu:before{
+        display: none;
+    }
+
     header .menuHead li{
         display: inline-block;
         margin-left: 35px;
@@ -2564,11 +2495,56 @@ header{
         display: block;
     }
 
+    footer ul:before{
+        display: none;
+    }
+
 }
 
 @media (max-width: 991px) {
     .container{
         width: 780px;
+    }
+
+    header .menu:before{
+        display: none;
+    }
+
+    header.page1{
+        height: 1350px;
+    }
+
+    .content .calculator{
+        height: 1020px;
+    }
+
+    .content .about{
+        height: 1800px;
+    }
+
+    .content .advantages{
+        height: 1050px;
+    }
+
+    .content .profitCharts{
+        height: 1295px;
+        margin-top: -30px;
+    }
+
+    .content .referalProgram {
+        height: 1265px;
+    }
+
+    .content .payments{
+        height: 225px;
+    }
+
+    .content .location{
+        height: 640px;
+    }
+
+    footer{
+        height: 400px;
     }
 
     header .menuHead li{
@@ -2582,21 +2558,51 @@ header{
     }
 
     header .name h2{
-        font-size: 40px;
+        font-size: 30px;
+        line-height: 60px;
+        padding-top: 60px;
+        padding-left: 270px;
     }
 
     header .name h1{
-        font-size: 100px;
+        font-size: 90px;
+        line-height: 80px;
+        padding-left: 70px;
     }
 
     header .name span{
-        font-size: 20px;
+        font-size: 18px;
         letter-spacing: 0.30em;
+        padding-left: 70px;
     }
 
+    header .registrathion{
+        display: block;
+        padding-top: 60px;
+        padding-left: 160px;
+    }
+
+    header img.I{
+        padding-top: 60px;
+    }
+
+    h3.lightCaption{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    h3.darkCaption{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .calculator img.I{
+        padding-top: 60px;
+    }
 
     .content .home{
         width: 740px;
+        margin-top: 50px;
     }
 
     .calculator .home .tariffAmount div{
@@ -2661,25 +2667,59 @@ header{
         line-height: 25px;
     }
 
+    .about img.I{
+        padding-top: 60px;
+    }
+
+    .about .license{
+        padding-top: 60px;
+    }
+
+    .about p{
+        font-size: 14px;
+        line-height: 25px;
+        padding-top: 400px;
+        width: auto;
+    }
+
+    .about .license .lic{
+        height: 400px;
+        width: 260px;
+        float: left;
+        padding-left: 70px;
+    }
+
+    .about .license > img{
+        margin-right: 70px;
+    }
+
     .presentation{
-        padding-top: 90px;
+        padding-top: 60px;
     }
 
     .presentation .img{
         width: 735px;
+        height: 550px;
     }
 
     .presentation .img img{
         margin-left: 290px;
     }
 
+    .advantages .container .I{
+        padding-top: 60px;
+    }
+
     .advantages .imgAdv > img{
-        left: 170px;
+        display: none;
     }
 
     .advantages .checkin{
+        margin-top: 90px;
+        padding-top: 90px;
         padding-left: 15px;
     }
+
     .advantages .checkin .chekSpan{
         padding-left: 15px;
     }
@@ -2698,10 +2738,12 @@ header{
 
     .advantages .itemLeft{
         width: 320px;
+        margin-top: -70px;
     }
 
     .advantages .itemRight{
         width: 320px;
+        margin-top: -70px;
     }
 
     .advantages .item1 > span{
@@ -2730,11 +2772,14 @@ header{
     }
 
     .tableDeposits{
-        width: 220px;
+        width: 280px;
+        margin-top: -50px;
+
     }
 
     .tableWithdrawals{
-        width: 220px;
+        width: 280px;
+        margin-top: -50px;
     }
 
     .tableDeposits > span{
@@ -2746,8 +2791,8 @@ header{
     .dependenceChart .TABLBIG{
         width: 300px;
         height: 300px;
-        left: 225px;
-        bottom: 60px;
+        left: 400px;
+        bottom: -350px;
     }
 
     .dependenceChart .TABLBIG a:nth-child(1){
@@ -2778,15 +2823,14 @@ header{
 
 
     .profitCharts .information{
-        width: 200px;
-        padding-top: 90px;
-
+        width: 370px;
+        padding-top: 30px;
     }
 
     .profitCharts .information p{
         font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.01em;
+        line-height: 24px;
+        letter-spacing: 0.010em;
     }
 
     .profitCharts .growthChart{
@@ -2809,9 +2853,18 @@ header{
 
     .profitCharts .growthChart div{
         height: 375px;
-        width: 490px;
-        background-color: #ffffff;
-        float: right;
+        width: 750px;
+        margin-top: 40px;
+    }
+
+    .tabelD .TD div:nth-child(1){
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .tableDeposits > span{
+        font-size: 16px;
+        line-height: 25px;
     }
 
     .Referal div {
@@ -2822,35 +2875,242 @@ header{
         left: 240px;
     }
 
-    .pays{
-        width: 80%;
-        padding-top: 90px;
+    .referalProgram .I{
+        padding-top: 60px;
+        position: relative;
+        display: block;
+        left: 50%;
     }
 
-    .pays div.img{
-        padding-left: 15px;
-        height: 80%;
-    }
-
-    .pays .img a{
-        height: 80%;
+    .pays {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        height: 180px;
+        margin-left: 50px;
     }
 
     .location .img{
         left: 260px;
     }
 
+    footer{
+        padding: 20px 0px;
+    }
+
+    footer .foot100 div.foot1,
+    footer .foot100 div.foot2,
+    footer .foot100 div.foot3{
+        float: left;
+        width: 100%;
+    }
+
+    footer .foot100 div.foot1{
+        width: 40%;
+        display: block;
+        margin-left: 20px;
+    }
+
     footer .foot100 div.foot2{
-        width: 43%;
-        padding-left: 60px;
+        width: 50%;
+        display: block;
+        margin-left: 40px;
     }
 
     footer .foot100 div.foot3{
-        width: 37%;
+        width: 300px;
         display: block;
     }
 
+    .foot100 .foot2 .col1,
+    .foot100 .foot2 .col2{
+        float: left;
+        display: block;
+    }
 
+    .foot100 .foot2 .col1{
+        width: 65%;
+    }
+
+    .foot100 .foot2 .col2{
+        width: 35%;
+    }
+
+    footer .logoCopyr{
+        display: block;
+        position: relative;
+    }
+
+    footer .logoCopyr .logo{
+        width: 200px;
+        float: left;
+        height: 100px;
+        padding-top: 10px;
+    }
+
+    footer .logoCopyr .logo a{
+        height: 100px;
+        width: 85px;
+        display: block;
+        float: left;
+    }
+
+    footer .logoCopyr .logo div{
+        margin-left: 100px;
+        display: block;
+        text-align: left;
+        padding-top: 5px;
+    }
+
+    footer .logo div span:nth-child(1){
+        font-family: "Podkova ExtraBold";
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 800;
+        color: #ff9001;
+        text-transform: uppercase;
+    }
+
+    footer .logo div span:nth-child(2){
+        font-family: "Podkova ExtraBold";
+        font-size: 62px;
+        line-height: 42px;
+        color: #ff9001;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    footer .logo div span:nth-child(3){
+        font-family: "Podkova";
+        font-size: 13px;
+        line-height: 20px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.60em;
+        display: block;
+    }
+
+    footer .logoCopyr .copyright{
+        display: block;
+        padding-top: 0px;
+        position: relative;
+        width: 200px;
+
+    }
+
+    footer .copyright div{
+        display: table;
+    }
+
+    footer .copyright span{
+        font-size: 15px;
+        line-height: 24px;
+        color: #ffffff;
+        font-weight: normal;
+        letter-spacing: 0.025em;
+        padding-top: 20px;
+        display: table-cell;
+
+    }
+
+    footer .copyright a{
+        font-size: 15px;
+        line-height: 24px;
+        color: #ffffff;
+        font-weight: normal;
+        letter-spacing: 0.025em;
+        text-decoration: none;
+        display: block;
+    }
+
+    footer li a{
+        font-size: 15px;
+        line-height: 44px;
+        color: #ffffff;
+        font-weight: bold;
+        letter-spacing: 0.025em;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    footer li a:hover,
+    footer .foot3 .contacts a:hover{
+        text-decoration: underline;
+        color: #ff692a;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    footer .contacts a[href="mailto:atlanticoil@support.cc"]:hover{
+        text-decoration: underline;
+        color: #ffffff;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    footer .contacts{
+        width: 345px;
+        padding-top: 30px;
+        margin-left: 230px;
+    }
+
+    footer .contacts span{
+        font-size: 15px;
+        line-height: 21px;
+        color: #ff9001;
+        font-weight: bold;
+        letter-spacing: 0.025em;
+        text-transform: uppercase;
+        display: block;
+        padding-top: 5px;
+    }
+
+    footer .contacts span:nth-child(1){
+        padding-top: 0px;
+    }
+
+    footer .contacts a:nth-child(2){
+        font-size: 15px;
+        line-height: 21px;
+        color: #ffffff;
+        font-weight: normal;
+        letter-spacing: 0.025em;
+        text-decoration: none;
+        display: block;
+    }
+
+    footer .contacts a:nth-child(4){
+        font-size: 15px;
+        line-height: 21px;
+        color: #ffffff;
+        font-weight: normal;
+        letter-spacing: 0.025em;
+        text-decoration: none;
+        display: block;
+    }
+
+    footer .contacts a:nth-child(6){
+        font-size: 15px;
+        line-height: 21px;
+        color: #ff6b28;
+        font-weight: normal;
+        letter-spacing: 0.025em;
+        text-decoration: underline;
+        display: block;
+    }
+
+    footer ul:before{
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -2858,6 +3118,54 @@ header{
         width: 100%;
     }
 
+    header .menu:before{
+        display: none;
+    }
+
+    header.page1{
+        height: 1250px;
+    }
+
+    .content .calculator{
+        height: 900px;
+    }
+
+    .content .about{
+        height: 1200px;
+    }
+
+    .content .advantages{
+        height: 1205px;
+    }
+
+    .content .profitCharts{
+        height: 1295px;
+        margin-top: -30px;
+    }
+
+    .content .referalProgram{
+        height: 880px;
+    }
+
+    .content .payments{
+        height: 160px;
+    }
+
+    .content .location{
+        height: 640px;
+    }
+
+    footer{
+        height: 360px;
+    }
+
+    header .logCont{
+        padding-top: 20px;
+    }
+
+    header .logo{
+        width: 100px;
+    }
 
     header .logo div span:nth-child(1),
     header .logo div span:nth-child(2),
@@ -2865,47 +3173,721 @@ header{
         display: none;
     }
 
+
+    header .contacts{
+        width: 200px;
+    }
+
     header .contacts span[class*="icon"]{
         display: none;
     }
 
-    header .logo{
-        width: 80px;
+    header .contacts > a{
+        display: none;
     }
 
-    header .contacts{
-        width: 250px;
+    header .contacts .icon-n2{
+        display: none;
+    }
+
+    header .contacts a{
+        text-decoration: none;
+    }
+
+    header .contacts div a:nth-child(1){
+        font-size: 27px;
+        line-height: 20px;
+    }
+
+    header .contacts div a:nth-child(1) sup{
+        font-size: 14px;
+    }
+
+    header .contacts div a:nth-child(2){
+        font-size: 14px;
+    }
+
+    header .menu{
+        padding-top: 30px;
     }
 
     header .menuHead li{
         display: inline-block;
-        margin-left: 25px;
+        margin-left: 10px;
     }
 
     header .menu .menuHead a{
         font-size: 14px;
-        line-height: 20px;
     }
 
     header .name h2{
         font-size: 25px;
-        line-height: 35px;
+        line-height: 30px;
+        letter-spacing: 0.020em;
+        padding-top: 40px;
+        margin-left: -270px;
     }
 
     header .name h1{
-        font-size: 65px;
-        line-height: 80px;
+        font-family: "Podkova";
+        font-size: 50px;
+        line-height: 50px;
+        color: #ffffff;
+        letter-spacing: 0.020em;
+        margin-left: -70px;
     }
 
     header .name span{
         font-size: 14px;
+        line-height: 40px;
+        letter-spacing: 0.045em;
+        margin-left: -70px;
+    }
+
+    header .registrathion{
+        display: inline-block;
+        padding-top: 30px;
+        margin-left: -170px;
+    }
+
+    header .registrathion button:nth-child(1){
+        font-size: 16px;
+        line-height: 50px;
+        width: 155px;
+    }
+
+    header .registrathion button:nth-child(2){
+        font-size: 16px;
+        line-height: 50px;
+        width: 150px;
+    }
+
+    header img.I{
+        padding-top: 70px;
+    }
+
+    h4.ligtText{
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    h3.lightCaption{
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    h4.darkText{
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    h3.darkCaption{
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .calculator img.I{
+        padding-top: 40px;
+    }
+
+    .content .home{
+        height: 630px;
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    .calculator .home .tariffAmount{
+        border: none;
+    }
+
+    .calculator .home .tariffAmount div{
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    .calculator .home .plan label{
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.020em;
+    }
+
+    .calculator .home .plan select{
+        height: 40px;
+        width: 315px;
+        font-size: 14px;
+        line-height: 40px;
+        letter-spacing: 0.020em;
+        margin-top: 10px;
+    }
+    .calculator .home .plan option{
+        font-size: 14px;
         line-height: 20px;
-        letter-spacing: 0.25em;
+        letter-spacing: 0.020em;
+    }
+
+    .calculator .home .text label{
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.020em;
+    }
+
+    .calculator .home .text input{
+        height: 40px;
+        width: 315px;
+        font-size: 14px;
+        line-height: 40px;
+        letter-spacing: 0.020em;
+        margin-top: 10px;
+    }
+
+    .calculator .home .plan select:hover,
+    .calculator .home .text input:hover,
+    .calculator .home .amount input:hover{
+        font-size: 14px;
+    }
+
+    .calculator .home .tariffAmount .depAmount span{
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.020em;
+        margin-top: 15px;
+    }
+
+    .calculator .home .tariffAmount .depAmount a{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .calculator .home .amount{
+        display: none;
+    }
+
+    .calculator .home .profit{
+        margin-top: 20px;
+        margin-left: 30px;
+        width: 100%;
+    }
+
+    .calculator .home .profit div{
+        width: 100%;
+        float: left;
+        margin-left: 20px;
+    }
+
+    .calculator .home .profit .card1{
+        height: 65px;
+        width: 120px;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .calculator .home .profit .card1 span:nth-child(2){
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .calculator .home .profit .card1 span:nth-child(3){
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .calculator .home .profit .card2{
+        height: 65px;
+        width: 120px;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .calculator .home .profit .card2 span:nth-child(2){
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .calculator .home .profit .card2 span:nth-child(3){
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .calculator .home .profit .card3{
+        height: 65px;
+        width: 120px;
+        padding-top: 10px;
+        margin-top: 10px;
+        margin-left: 85px;
+    }
+
+    .calculator .home .profit .card3 span:nth-child(2){
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .calculator .home .profit .card3 span:nth-child(3){
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .calculator .home p{
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.025em;
+        padding: 20px 10px 0px 10px;
+    }
+
+    .calculator .home .money{
+        font-size: 14px;
+        line-height: 50px;
+        width: 180px;
+        left: 90px;
+    }
+
+    .about img.I{
+        padding-top: 40px;
+    }
+
+    .about .license{
+        padding-top: 30px;
+    }
+
+    .about p{
+        /*width: 565px;*/
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.020em;
+        margin-top: -160px;
+
+    }
+
+    .about .license span{
+        font-size: 14px;
+    }
+
+    .about .license p:nth-child(4){
+        padding-top: 25px;
+        margin-top: 0px;
+    }
+
+    .about p:last-child{
+        width: auto;
+        padding-top: 25px;
+        margin-top: 0px;
+    }
+
+    .about .license .lic{
+        height: 220px;
+        width: 160px;
+        float: left;
+        position: relative;
+        margin-top: -10px;
+        display: block;
+        margin-left: -70px;
+    }
+
+    .about .license .lic img{
+        width: 160px;
+        height: 200px;
+    }
+
+    .about .lic button{
+        height: 40px;
+        width: 160px;
+        font-size: 12px;
+        line-height: 40px;
+        top: 180px;
+    }
+
+    .about .license > img{
+        width: 160px;
+        height: 220px;
+        float: right;
+        margin-right: 5px;
+    }
+
+    .presentation{
+        padding-top: 30px;
+    }
+
+    .presentation .img{
+        width: 350px;
+        height: 210px;
+    }
+
+    .presentation .img img{
+        margin-top: 30px;
+        margin-left: 140px;
+        height: 60px;
+    }
+
+    .presentation .img .ligtText{
+        font-size: 14px;
+        line-height: 50px;
+        letter-spacing: 0.020em;
+        font-weight: 300;
+    }
+
+    .advantages .container .I{
+        padding-top: 40px;
+    }
+
+    .advantages .imgAdv{
+        padding-top: 60px;
+        height: 470px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+
+    .advantages .imgAdv > img{
+        display: none;
+    }
+
+    .advantages .itemLeft{
+        float: left;
+        width: 350px;
+    }
+
+    .advantages .itemRight{
+        float: left;
+        width: 420px;
+        margin-top: 10px;
+    }
+
+    .advantages .item1{
+        position: relative;
+        display: block;
+        padding-top: 50px;
+    }
+
+    .advantages .item1 a{
+        font-size: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        position: absolute;
+        left: -15px;
+        top: 50px;
+    }
+
+    .advantages .item1 > span{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        margin-left: 60px;
+        display: block;
+    }
+
+    .advantages .item1 p{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        margin-left: 60px;
+    }
+
+    .advantages .item2{
+        position: relative;
+        display: block;
+        padding-top: 50px;
+    }
+
+    .advantages .item2 a{
+        font-size: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        position: absolute;
+        top: 50px;
+        left: -15px;
     }
 
 
+    .advantages .item2 > span{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        display: block;
+        margin-left: 60px;
+    }
+
+    .advantages .item2 p{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        margin-left: 60px;
+    }
 
 
+    .advantages .checkin{
+        display: block;
+        width: 60%;
+        margin-top: 155px;
+        padding-top: 225px;
+        padding-left: 10px;
+        vertical-align: middle;
+    }
+
+    .advantages .checkin img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .advantages .checkin .chekSpan{
+        display: none;
+    }
+
+    .advantages .checkin a{
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 130px;
+        margin-top: -130px;
+    }
+
+    .advantages .checkin button{
+        height: 50px;
+        width: 180px;
+        font-size: 20px;
+        line-height: 50px;
+        letter-spacing: 0.030em;
+    }
+
+    .profitCharts .deposits{
+        padding-top: 100px;
+    }
+
+    .profitCharts a{
+        text-decoration: none;
+    }
+
+    .profitCharts .tableDeposits a{
+        font-size: 90px;
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 25px;
+    }
+
+    .deposits{
+        position: relative;
+    }
+
+    .tableDeposits{
+        width: 350px;
+    }
+
+    .tableWithdrawals{
+        width: 350px;
+        margin-top: 20px;
+    }
 
 
+    .tableDeposits > span{
+        font-size: 25px;
+        line-height: 48px;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 15px;
+    }
+
+    .dependenceChart .TABLBIG{
+        display: none;
+    }
+
+    .profitCharts .tableWithdrawals > span{
+        font-size: 25px;
+        line-height: 48px;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    .profitCharts .tableWithdrawals a{
+        font-size: 90px;
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 25px;
+    }
+
+    .profitCharts .information{
+
+        width: 350px;
+        padding-top: 20px;
+
+    }
+
+    .profitCharts .information p{
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.025em;
+        font-weight: 200;
+        margin-top: 20px;
+    }
+
+    .profitCharts .growthChart{
+        display: none;
+    }
+
+    .referalProgram .I{
+        padding-top: 40px;
+    }
+
+    .referalProgram .Referal p:nth-child(1){
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.025em;
+        padding-top: 30px;
+    }
+
+    .referalProgram .Referal p:nth-child(2){
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 20px;
+    }
+
+    .Referal div {
+        height: 300px;
+        width: 300px;
+        top: 30px;
+        left: 20px;
+    }
+
+    .Referal span{
+        font-size: 100px;
+        top: 120px;
+        left: 90px;
+    }
+
+    .referalProgram .checkin h3 {
+        padding-top: 40px;
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 0.025em;
+    }
+
+    .referalProgram .checkin button {
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+        line-height: 50px;
+        letter-spacing: 0.025em;
+        top: 35px;
+        left: 60px;
+    }
+
+
+    .pays{
+        display: flex;
+        flex-wrap: wrap;
+        height: 160px;
+        margin-left: 10px;
+        padding-top: 60px;
+    }
+
+    .pays img{
+        height: 30px;
+        width: 75px;
+    }
+
+
+    .location{
+        display: none;
+    }
+
+    footer{
+        padding: 30px 0px;
+    }
+
+    footer .foot100 div.foot1,
+    footer .foot100 div.foot2,
+    footer .foot100 div.foot3{
+        float: left;
+        width: 100%;
+    }
+
+    footer .foot100 div.foot1{
+        width: 20%;
+        display: block;
+        margin-left: -5px;
+    }
+
+    footer .foot100 div.foot2{
+        width: 80%;
+        display: block;
+        padding-left: 0px;
+        margin-left: 120px;
+        margin-top: -75px;
+    }
+
+    footer .foot100 div.foot3{
+        width: 100%;
+        display: block;
+    }
+
+
+    .foot100 .foot2 .col1{
+        width: 60%;
+    }
+
+    .foot100 .foot2 .col2{
+        width: 40%;
+        margin-left: -10px;
+    }
+
+    footer .logoCopyr .logo{
+        width: 140px;
+        float: left;
+        height: 70px;
+        padding-top: 10px;
+    }
+
+    footer .logoCopyr .logo div{
+        display: none;
+    }
+
+    footer .logoCopyr .copyright{
+        display: none;
+
+    }
+
+    footer li a{
+        font-size: 12px;
+        line-height: 30px;
+        letter-spacing: 0.020em;
+    }
+
+
+    footer .contacts{
+        width: 345px;
+        padding-top: 20px;
+        margin-left: 50px;
+    }
+
+    footer .contacts span{
+        font-size: 12px;
+        line-height: 20px;
+        padding-top: 15px;
+    }
+
+    footer .contacts span:nth-child(1){
+        padding-top: 10px;
+    }
+
+    footer .contacts a:nth-child(2){
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    footer .contacts a:nth-child(4){
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    footer .contacts a:nth-child(6){
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    footer ul:before{
+        display: none;
+    }
 }
