@@ -1,5 +1,4 @@
-
-window.onload = function () {
+$(document).ready(function (){
     function clock() {
         var date = new Date(),
             day = date.getDate(),
@@ -25,4 +24,35 @@ window.onload = function () {
     }
 
     clockStart();
-}
+
+    var btnUp = $('.up');
+
+    btnUp.hide();
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500){
+            btnUp.fadeIn();
+        } else{
+            btnUp.fadeOut ();
+        }
+    });
+
+    btnUp.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
+    });
+
+
+    $('.listInvestment').owlCarousel({
+        margin: 40,
+        items: 4,
+        dots: false,
+        nav: true,
+        navText: ["<",">"],
+        loop: true
+
+    });
+
+});
