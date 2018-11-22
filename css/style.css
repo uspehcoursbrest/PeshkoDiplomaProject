@@ -403,18 +403,18 @@ header .listInvestment .owl-nav > button[class*="owl"]{
     font-size: 60px;
     font-weight: bold;
     line-height: 60px;
-    top: 50%;
+    top: 60%;
     color: #ff9001;
     margin-top: -30px;
     outline: none;
 }
 
 header .listInvestment .owl-nav button.owl-prev{
-    left: 50px;
+    left: -50px;
 }
 
 header .listInvestment .owl-nav button.owl-next{
-    right: 50px;
+    right: -50px;
 }
 
 header .listInvestment .card span.TC{
