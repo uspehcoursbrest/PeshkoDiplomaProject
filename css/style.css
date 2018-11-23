@@ -507,7 +507,7 @@ h3.darkCaption{
     margin-top: 70px;
 }
 
-.calculator .home .plan label{
+.calculator .home .selectB1 label{
     font-size: 17px;
     line-height: 30px;
     color: #05141b;
@@ -517,7 +517,7 @@ h3.darkCaption{
     display: block;
 }
 
-.calculator .home .plan select{
+.calculator .home .selectB1 select{
     height: 55px;
     width: 505px;
     font-size: 17px;
@@ -528,7 +528,7 @@ h3.darkCaption{
     box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.11);
     margin-top: 5px;
 }
-.calculator .home .plan option{
+.calculator .home .selectB1 option{
     font-size: 17px;
     line-height: 55px;
     color: #05141b;
@@ -555,6 +555,7 @@ h3.darkCaption{
     display: block;
     box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.11);
     margin-top: 5px;
+    padding-left: 10px;
 }
 
 .calculator .home .plan select:hover,
@@ -611,10 +612,103 @@ h3.darkCaption{
     margin-top: -20px;
 }
 
-.calculator .home .amount input{
-    height: 110px;
+.calculator .home .range{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.range .irs {
     width: 1050px;
-    border: none;
+}
+
+.range .irs-line {
+    width: 1050px;
+    height: 16px;
+border: 1px solid  rgb(5, 20, 27);
+background-color: rgb(5, 20, 27);
+-webkit-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
+-moz-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.11);
+}
+
+.range .irs-bar {
+height: 16px;
+background-color: #ff9001;
+    border: 1px solid  rgb(5, 20, 27);
+}
+
+.range .irs-bar-edge {
+height: 16px;
+width: 30px;
+background-color: #ff9001;
+    border: 1px solid  rgb(5, 20, 27);
+    border-right: none;
+}
+
+.range .irs-grid {
+bottom: 18px;
+    width: 1050px;
+}
+
+.range .irs-grid .irs-grid-text {
+display: none;
+}
+
+.range .irs-grid .irs-grid-pol {
+height: 30px;
+background-color: #05131a;
+}
+
+.range .irs-grid .irs-grid-pol:first-of-type {
+display: none;
+}
+
+.range .irs-grid .irs-grid-pol:nth-last-child(2) {
+display: none;
+}
+
+.range .irs-slider {
+    background-image: url("../img/png/polzunok.png");
+top: 10px;
+width: 48px;
+height: 48px;
+background-color: rgb(255, 144, 1);
+border: 1px solid rgb(5, 20, 27);
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+-webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.38);
+-moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.38);
+box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.38);
+cursor: pointer;
+}
+
+
+
+.range .irs-single {
+top: -35px;
+font-size: 17px;
+line-height: 30px;
+color: #ff9001;
+font-weight: bold;
+    background-color: rgb(5, 20, 27, 0);
+    position: absolute;
+    left: 662px;
+    width: 76px;
+    height: 42px;
+    background-image: url("../img/png/polzTABL.png");
+    text-align: center;
+
+}
+
+.range .irs-min,
+.range .irs-max {
+top: 50px;
+font-size: 17px;
+line-height: 30px;
+color: #05141b;
+font-weight: bold;
+background-color: transparent;
 }
 
 .calculator .home .profit{
@@ -627,6 +721,7 @@ h3.darkCaption{
     width: 1050px;
     float: left;
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 .calculator .home .profit .card1{
@@ -2362,6 +2457,20 @@ header{
         margin-left: 35px;
     }
 
+
+    header .listInvestment .card{
+        height: 300px;
+        width: 200px;
+    }
+
+    header .listInvestment .owl-nav button.owl-prev{
+        left: -30px;
+    }
+
+    header .listInvestment .owl-nav button.owl-next{
+        right: -30px;
+    }
+
     .content .home{
         width: 950px;
     }
@@ -2370,7 +2479,15 @@ header{
         margin-top: 30px;
     }
 
-    .calculator .home .amount input{
+    .range .irs {
+        width: 850px;
+    }
+
+    .range .irs-line {
+        width: 850px;
+    }
+
+    .range .irs-grid {
         width: 850px;
     }
 
@@ -2573,6 +2690,45 @@ header{
         height: 1350px;
     }
 
+    header .listInvestment .card span.TC{
+        display: none;
+    }
+
+
+    header .listInvestment .card{
+        height: 270px;
+        width: 170px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(255, 255, 255, 0.29);
+        box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.53);
+        background-color: rgba(0, 0, 0, 0);
+        margin-top: 95px;
+        position: relative;
+        padding-top: 20px;
+    }
+
+
+    header .listInvestment .owl-nav > button[class*="owl"]{
+        position: absolute;
+        text-align: center;
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 60px;
+        top: 60%;
+        color: #ff9001;
+        margin-top: -30px;
+        outline: none;
+    }
+
+    header .listInvestment .owl-nav button.owl-prev{
+        left: -20px;
+    }
+
+    header .listInvestment .owl-nav button.owl-next{
+        right: -20px;
+    }
+
     .content .calculator{
         height: 1020px;
     }
@@ -2655,6 +2811,8 @@ header{
         line-height: 60px;
     }
 
+
+
     .calculator img.I{
         padding-top: 60px;
     }
@@ -2668,7 +2826,15 @@ header{
         margin-top: 15px;
     }
 
-    .calculator .home .amount input{
+    .range .irs {
+        width: 655px;
+    }
+
+    .range .irs-line {
+        width: 655px;
+    }
+
+    .range .irs-grid {
         width: 655px;
     }
 
@@ -3182,7 +3348,7 @@ header{
     }
 
     header.page1{
-        height: 1250px;
+        height: 700px;
     }
 
     .content .calculator{
@@ -3345,6 +3511,18 @@ header{
         line-height: 50px;
     }
 
+    header .listInvestment{
+        display: none;
+    }
+
+    header .listInvestment .card{
+        display: none;
+    }
+
+    header .listInvestment .owl-nav > button[class*="owl"]{
+        display: none;
+    }
+
     .calculator img.I{
         padding-top: 40px;
     }
@@ -3364,13 +3542,13 @@ header{
         margin-top: 10px;
     }
 
-    .calculator .home .plan label{
+    .calculator .home .selectB1 label{
         font-size: 14px;
         line-height: 30px;
         letter-spacing: 0.020em;
     }
 
-    .calculator .home .plan select{
+    .calculator .home .selectB1 select{
         height: 40px;
         width: 315px;
         font-size: 14px;
@@ -3378,7 +3556,7 @@ header{
         letter-spacing: 0.020em;
         margin-top: 10px;
     }
-    .calculator .home .plan option{
+    .calculator .home .selectB1 option{
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.020em;
@@ -3418,6 +3596,22 @@ header{
     }
 
     .calculator .home .amount{
+        display: none;
+    }
+
+    #rangeSum{
+        display: none;
+    }
+
+    .range .irs {
+        display: none;
+    }
+
+    .range .irs-line {
+        display: none;
+    }
+
+    .range .irs-grid {
         display: none;
     }
 

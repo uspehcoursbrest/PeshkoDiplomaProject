@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATLANTIC OIL</title>
+
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinSimple.css">
+    <link rel="stylesheet" href="css/selectric.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="JS/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="JS/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="JS/ion.rangeSlider.js"></script>
+    <script type="text/javascript" src="JS/jquery.selectric.js"></script>
     <script type="text/javascript" src="JS/script.js"></script>
 </head>
 <body>
@@ -134,16 +142,15 @@
             <h3 class="darkCaption">Calculator</h3>
             <form class="home">
                 <fieldset class="tariffAmount">
-                    <div class="plan">
+                    <div class="selectB1">
                         <label for="plan">Select plan:</label>
                         <select name="plan" id="plan">
-                            <option value="#">Plan 4 $ 2501 - $ 5000 180% After 5 Days</option>
-                            <option value="#">Plan 5</option>
+                            <option>Plan 4 $ 2501 - $ 5000 180% After 5 Days</option>
                         </select>
                     </div>
                     <div class="text">
-                        <label for="text">enter amount:</label>
-                        <input type="text" id="text">
+                        <label for="sumInv">enter amount:</label>
+                        <input type="text" value="3001 $" id="sumInv">
                     </div>
                     <div class="depAmount">
                         <span>Deposit amount:</span>
@@ -151,8 +158,11 @@
                     </div>
                 </fieldset>
                 <div class="amount">
-                    <label for="amount">Select amount:</label>
-                    <input type="text" id="amount">
+                    <label for="rangeSum">Select amount:</label>
+                    <!--<input type="text" id="amount">-->
+                    <div class="range">
+                        <input type="text" class="rangeSum" id="rangeSum">
+                    </div>
                 </div>
                 <div class="profit clear">
                     <div class="card1">

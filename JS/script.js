@@ -55,4 +55,39 @@ $(document).ready(function (){
 
     });
 
+
+    $('#rangeSum').ionRangeSlider({
+        grid: true,
+        min: 20,
+        max: 70000,
+        from: 15670,
+        step: 1,
+        grid_num: 5,
+        grid_margin: false,
+        postfix: "$",
+        onStart: function (data) {
+            $('#sumInv').val(data.from);
+        },
+        onChange: function (data) {
+            $('#sumInv').val(data.from);
+        }
+
+    });
+
+    var sumRange = $('#rangeSum').data('ionRangeSlider'),
+        min = 20,
+        max = 70000;
+
+    $('#sumInv').on('change keyup', function () {
+        var val = $(this).prop('value');
+        if (val < min){
+            val = min;
+        } else if (val > max){
+            val = max;
+        }
+        sumRange.update({
+            from: val
+        });
+    });
+
 });
